@@ -1,6 +1,6 @@
-:root{
+:root {
 
-
-    /*--------------Color-------------*/
-    --primary-color:#5AB468;
+  /* --------------Color------------- */
+  --primary-color: #5ab468;
+  --primary-color-3: rgb(90 180 104 / 30%);
 }

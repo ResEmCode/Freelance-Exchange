@@ -1,3 +1,10 @@
+
+import { InfoBlock } from '@/components/InfoBlock/InfoBlock';
+
 export const HomePage = () => {
-  return <div>HomePage Hello world</div>;
+  return (
+    <div>
+      <InfoBlock />
+    </div>
+  );
 };
