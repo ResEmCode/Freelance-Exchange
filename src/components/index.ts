@@ -1,2 +1,3 @@
-export * from './InfoBlock/components/InfoCards/InfoCards';
+export * from './InfoBlock';
 export * from './Layouts';
+export * from './Typography/Typography';

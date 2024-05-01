@@ -1,6 +1,5 @@
 import { InfoCards, InfoStatistics } from './components';
 
-
 export const InfoBlock = () => {
   return (
     <div className='container'>

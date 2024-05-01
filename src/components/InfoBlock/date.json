@@ -1,0 +1,56 @@
+{
+  "CardItems": [
+    {
+      "title": "Дизайн",
+      "img": "../../../../../public/images/InfoBlock/card-1.jpg"
+    },
+    {
+      "title": "IT сфера",
+      "img": "../../../../../public/images/InfoBlock/card-2.jpg"
+    },
+    {
+      "title": "Social Media",
+      "img": "../../../../../public/images/InfoBlock/card-3.jpg"
+    },
+    {
+      "title": "SEO & Optimization",
+      "img": "../../../../../public/images/InfoBlock/card-4.jpg"
+    },
+    {
+      "title": "Training",
+      "img": "../../../../../public/images/InfoBlock/card-5.jpg"
+    },
+    {
+      "title": "Music",
+      "img": "../../../../../public/images/InfoBlock/card-6.jpg"
+    },
+    {
+      "title": "Translate",
+      "img": "../../../../../public/images/InfoBlock/card-7.jpg"
+    },
+    {
+      "title": "Analytics",
+      "img": "../../../../../public/images/InfoBlock/card-8.jpg"
+    }
+  ],
+
+  "Statistics": [
+    {
+      "title": "ResEmCode",
+      "logo": true,
+      "desc": "Фриланс платформа №1"
+    },
+    {
+      "title": "380 123",
+      "desc": "Актуальный онлайн"
+    },
+    {
+      "title": "2 195",
+      "desc": "Новых заказов за неделю"
+    },
+    {
+      "title": "912 033",
+      "desc": "Выполнено проектовза все время"
+    }
+  ]
+}

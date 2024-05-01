@@ -1,4 +1,3 @@
-
 import { InfoBlock } from '@/components/InfoBlock/InfoBlock';
 
 export const HomePage = () => {

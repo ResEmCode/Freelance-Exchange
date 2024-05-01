@@ -1,25 +1,11 @@
-import styles from './InfoStatistics.module.css';
 import Logo from '@/assets/images/logo.svg';
+import { Typography } from '@/components';
 
-const statistics = [
-  {
-    title: 'ResEmCode',
-    logo: Logo,
-    desc: 'Фриланс платформа №1'
-  },
-  {
-    title: '380 123',
-    desc: 'Актуальный онлайн'
-  },
-  {
-    title: '2 195',
-    desc: 'Новых заказов за неделю'
-  },
-  {
-    title: '912 033',
-    desc: 'Выполнено проектовза все время'
-  }
-];
+import data from '../../date.json';
+
+import styles from './InfoStatistics.module.css';
+
+const statistics = data.Statistics;
 
 export const InfoStatistics = () => {
   return (
@@ -28,10 +14,12 @@ export const InfoStatistics = () => {
         return (
           <li className={styles.item}>
             <h2 className={styles.title}>
-              {item.logo && <img className={styles.logo} src={item.logo} alt='logo' />}
+              {item.logo && <img className={styles.logo} src={Logo} alt='logo' />}
               {item.title}
             </h2>
-            <span className={styles.desc}>{item.desc}</span>
+            <Typography className={styles.desc} variant='paragraph16_regular' tag='p'>
+              {item.desc}
+            </Typography>
           </li>
         );
       })}
