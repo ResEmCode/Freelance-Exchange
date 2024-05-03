@@ -1,0 +1,16 @@
+{
+  "SwiperItem": [
+    {
+      "image": "../../../public/images/HomeSlider/slider-1.png"
+    },
+    {
+      "image": "../../../public/images/HomeSlider/slider-2.png"
+    },
+    {
+      "image": "../../../public/images/HomeSlider/slider-3.png"
+    },
+    {
+      "image": "../../../public/images/HomeSlider/slider-2.png"
+    }
+  ]
+}
