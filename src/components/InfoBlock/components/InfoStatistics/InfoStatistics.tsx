@@ -12,7 +12,7 @@ export const InfoStatistics = () => {
     <ul className={styles.items}>
       {statistics.map((item) => {
         return (
-          <li className={styles.item}>
+          <li key={item.title} className={styles.item}>
             <h2 className={styles.title}>
               {item.logo && <img className={styles.logo} src={Logo} alt='logo' />}
               {item.title}

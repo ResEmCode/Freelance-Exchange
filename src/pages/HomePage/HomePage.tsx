@@ -1,5 +1,4 @@
-import Header from '@/components/Header/Header';
-import { InfoBlock } from '@/components/InfoBlock/InfoBlock';
+import { InfoBlock, Header } from '@/components';
 
 export const HomePage = () => {
   return (

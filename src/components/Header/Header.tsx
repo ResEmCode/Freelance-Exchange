@@ -1,9 +1,7 @@
-import React from 'react';
 import styles from './Header.module.css';
 import background from '../../../public/images/Header/HeaderBackground.png';
-import clsx from 'clsx';
 
-const Header = () => {
+export const Header = () => {
   return (
     <>
       <div className={styles.wrapper}>
@@ -21,5 +19,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;
