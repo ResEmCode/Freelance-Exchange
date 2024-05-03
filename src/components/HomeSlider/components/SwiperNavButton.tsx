@@ -4,7 +4,7 @@ import styles from './SwiperNavButton.module.css';
 
 import { useSwiper } from 'swiper/react';
 
-const SwiperNavButton = () => {
+export const SwiperNavButton = () => {
   const swiper = useSwiper();
   return (
     <>
@@ -13,5 +13,3 @@ const SwiperNavButton = () => {
     </>
   );
 };
-
-export default SwiperNavButton;

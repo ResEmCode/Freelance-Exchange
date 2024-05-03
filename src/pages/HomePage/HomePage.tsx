@@ -1,5 +1,4 @@
-import { InfoBlock, Header } from '@/components';
-import HomeSlider from '@/components/HomeSlider/HomeSlider';
+import { InfoBlock, Header, HomeSlider } from '@/components';
 
 export const HomePage = () => {
   return (
