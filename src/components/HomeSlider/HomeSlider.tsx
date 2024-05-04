@@ -11,7 +11,7 @@ export const HomeSlider = () => {
       <Swiper slidesPerView={3} spaceBetween={120} loop={true} modules={[Pagination, Navigation]}>
         {SwiperItems.map((item) => (
           <SwiperSlide>
-            <img className={styles.img} src={item.image} alt='' />
+            <img className={styles.img} src={item.image} alt='slider item' />
           </SwiperSlide>
         ))}
         <SwiperNavButton />
