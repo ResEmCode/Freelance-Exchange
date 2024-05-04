@@ -1,8 +1,8 @@
 .items {
   display: grid;
   align-items: center;
-  padding-top: 55px;
   grid-template-columns: repeat(4, 1fr);
+  padding-block: 55px;
 }
 
 .item {

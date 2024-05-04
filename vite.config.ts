@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   const config = {
     server: {
       port: 3000,
@@ -19,8 +19,5 @@ export default defineConfig(({ command }) => {
     },
     base: '/'
   };
-  if (command !== 'serve') {
-    config.base = '/';
-  }
   return config;
 });
