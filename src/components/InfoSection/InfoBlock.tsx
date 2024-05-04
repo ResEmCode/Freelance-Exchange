@@ -1,6 +1,6 @@
 import { InfoCards, InfoStatistics } from './components';
 
-export const InfoBlock = () => {
+export const InfoSection = () => {
   return (
     <div className='container'>
       <InfoCards />

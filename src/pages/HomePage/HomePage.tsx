@@ -1,12 +1,13 @@
-import { InfoBlock, Header, HomeSlider, WhyUsSection } from '@/components';
+import { InfoSection, Header, HomeSlider, WhyUsSection, HomeDesc } from '@/components';
 
 export const HomePage = () => {
   return (
     <div>
       <Header />
-      <InfoBlock />
+      <InfoSection />
       <WhyUsSection />
       <HomeSlider />
+      <HomeDesc />
     </div>
   );
 };
