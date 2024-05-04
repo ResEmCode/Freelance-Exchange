@@ -1,11 +1,12 @@
-import { WhyUsSection } from '@/components';
-import { InfoBlock } from '@/components/InfoBlock/InfoBlock';
+import { InfoBlock, Header, HomeSlider, WhyUsSection } from '@/components';
 
 export const HomePage = () => {
   return (
     <div>
+      <Header />
       <InfoBlock />
       <WhyUsSection />
+      <HomeSlider />
     </div>
   );
 };

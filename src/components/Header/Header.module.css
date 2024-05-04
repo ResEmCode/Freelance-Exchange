@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+  height: 503px;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
+.block {
+  display: flex;
+  padding-bottom: 111px;
+}
+
+.text {
+  max-width: 1070px;
+  padding-top: 47px;
+  margin-bottom: 45px;
+  color: #fff;
+  font-size: 96px;
+  line-height: 1.5;
+}
+
+.input {
+  width: 100%;
+  max-width: 450px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  padding-block: 28px;
+  padding-inline: 28px;
+}
+
+.btn {
+  background-color: #5ab468;
+  color: #fff;
+  font-size: 24px;
+  padding-block: 22px;
+  padding-inline: 38px;
+}
+
+.img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: blur(20px);
+}

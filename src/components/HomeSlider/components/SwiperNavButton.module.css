@@ -1,0 +1,17 @@
+.next {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 110px;
+  width: 60px;
+  height: 60px;
+}
+
+.prev {
+  position: absolute;
+  z-index: 1;
+  bottom: 110px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
