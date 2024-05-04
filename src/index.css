@@ -1,7 +1,8 @@
-@import url(./assets/styles/fonts.css);
-@import url(./assets/styles/global.css);
-@import url(./assets/styles/reset.css);
-@import url(./assets/styles/vars.css);
+@import "./assets/styles/fonts.css";
+@import "./assets/styles/global.css";
+@import "./assets/styles/reset.css";
+@import "./assets/styles/vars.css";
+@import "./assets/styles/typography.css";
 
 
 
