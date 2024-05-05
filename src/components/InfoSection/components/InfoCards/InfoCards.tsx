@@ -9,7 +9,7 @@ export const InfoCards = () => {
     <ul className={styles.items}>
       {CardItems.map((item) => (
         <li className={styles.item} key={item.title}>
-          <a href='#!'>
+          <a href='#!' className={styles.link}>
             <img className={styles.img} src={item.img} alt='card techno' />
             <span className={styles.text}>{item.title}</span>
           </a>

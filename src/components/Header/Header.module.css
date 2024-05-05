@@ -24,13 +24,10 @@
   padding-bottom: 111px;
 }
 
-.text {
-  max-width: 1070px;
-  padding-top: 47px;
-  margin-bottom: 45px;
+.title {
+  display: inline-block;
   color: #fff;
-  font-size: 96px;
-  line-height: 1.5;
+  margin-block: 45px;
 }
 
 .input {
@@ -42,7 +39,7 @@
   outline: none;
   padding-block: 28px;
   padding-inline: 28px;
-  
+
   &::placeholder {
     color: #000;
     font-size: 16px;

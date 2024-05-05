@@ -4,6 +4,7 @@ type TypographyVariant =
   | 'paragraph20_regular'
   | 'paragraph16_regular'
   | 'paragraph30_medium'
+  | 'title24_regular'
   | 'title96_regular'
   | 'title40_regular';
 

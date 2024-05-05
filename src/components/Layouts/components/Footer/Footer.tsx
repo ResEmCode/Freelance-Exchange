@@ -1,6 +1,7 @@
 import styles from './Footer.module.css';
-import Items from './date.json';
-import logo from '../../../../../public/images/Footer/logo.svg';
+import date from './date.json';
+import { Typography } from '@/components/Typography/Typography';
+import { Logo } from '@/assets/svg';
 
 export const Footer = () => {
   return (
@@ -9,20 +10,34 @@ export const Footer = () => {
         <div className={styles.inner}>
           <div>
             <a className={styles.logo} href=''>
-              <img className={styles.img} src={logo} alt='logo' />
-              <p>ResEmCode</p>
+              <Logo size={25} className={styles.icon}/>
+              <Typography variant='title24_regular' tag='h2'>
+                ResEmCode
+              </Typography>
             </a>
           </div>
-          {Items.map((item) => (
-            <ul className={styles.items}>
+          {date.map((item) => (
+            <ul key={item.title} className={styles.items}>
               <li className={styles.item}>
-                <a href=''>{item.title}</a>
+                <a href=''>
+                  <Typography variant='paragraph16_regular' tag='p'>
+                    {item.title}
+                  </Typography>
+                </a>
               </li>
               <li className={styles.item}>
-                <a href=''>{item.name}</a>
+                <a href=''>
+                  <Typography variant='paragraph16_regular' tag='p'>
+                    {item.name}
+                  </Typography>
+                </a>
               </li>
               <li className={styles.item}>
-                <a href=''>{item.text}</a>
+                <a href=''>
+                  <Typography variant='paragraph16_regular' tag='p'>
+                    {item.text}
+                  </Typography>
+                </a>
               </li>
             </ul>
           ))}

@@ -17,6 +17,7 @@
 .inner {
   position: absolute;
   z-index: 2;
+  max-width: 1435px;
   padding-block: 80px;
   text-align: center;
 }

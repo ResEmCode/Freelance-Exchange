@@ -9,6 +9,7 @@
   height: 100%;
   min-height: 230px;
   max-height: 230px;
+  align-self: center;
   padding: 66px 55px 88px;
   border: 3px solid var(--primary-color-3);
   text-align: center;
@@ -26,9 +27,13 @@
   line-height: 44px;
 }
 
-.logo {
-  width: 46px;
-  height: 46px;
+.icon{
+  width: 50px;
+  height: 50px;
+
+  & path{
+    fill: var(--primary-color)
+  }
 }
 
 .desc {

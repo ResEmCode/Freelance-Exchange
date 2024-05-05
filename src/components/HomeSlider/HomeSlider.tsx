@@ -8,14 +8,25 @@ import SwiperItems from './date.json';
 export const HomeSlider = () => {
   return (
     <div className={styles.container}>
-      <Swiper slidesPerView={3} spaceBetween={120} loop={true} modules={[Pagination, Navigation]}>
-        {SwiperItems.map((item) => (
-          <SwiperSlide>
-            <img className={styles.img} src={item.image} alt='slider item' />
-          </SwiperSlide>
-        ))}
+      <div className={styles.inner}>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={120}
+          loop={true}
+          modules={[Pagination, Navigation]}
+          navigation={{
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+          }}
+        >
+          {SwiperItems.map((item, index) => (
+            <SwiperSlide key={index}>
+              <img className={styles.img} src={item.image} alt='slider item' />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <SwiperNavButton />
-      </Swiper>
+      </div>
     </div>
   );
 };

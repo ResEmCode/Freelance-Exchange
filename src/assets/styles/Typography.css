@@ -16,6 +16,14 @@
   line-height: 100%;
 }
 
+
+.title24_regular {
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+
+}
+
 .title40_regular {
   color: #000;
   font-size: 40px;

@@ -9,8 +9,18 @@ export const SwiperNavButton = () => {
   const swiper = useSwiper();
   return (
     <>
-      <img onClick={() => swiper.slideNext()} src={next} alt='' className={clsx(styles.btn,styles.next)} />
-      <img onClick={() => swiper.slidePrev()} src={prev} alt='' className={clsx(styles.btn,styles.prev)} />
+      <img
+        onClick={() => swiper.slideNext()}
+        src={next}
+        alt=''
+        className={clsx(styles.btn, styles.next, 'swiper-next')}
+      />
+      <img
+        onClick={() => swiper.slidePrev()}
+        src={prev}
+        alt=''
+        className={clsx(styles.btn, styles.prev, 'swiper-prev')}
+      />
     </>
   );
 };
