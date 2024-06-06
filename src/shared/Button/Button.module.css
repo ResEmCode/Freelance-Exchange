@@ -15,11 +15,19 @@
   color: var(--secondary-color);
   font-size: 40px;
 
-
-  &:hover{
-    background-color: var(--primary-color-hover)
+  &:hover {
+    background-color: var(--primary-color-hover);
   }
 }
 
+.offer {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 16px;
 
-
+  &:hover {
+    background-color: var(--secondary-color-hover);
+  }
+}

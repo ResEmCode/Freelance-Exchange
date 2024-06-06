@@ -1,0 +1,72 @@
+[
+  {
+    "image": "../../../public/images/AuctionCard/1.png",
+    "number": "Слот №213",
+    "title": "Постер время приключений",
+    "author": "Автор Alex228",
+    "price": "Данная цена 113$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/2.png",
+    "number": "Слот №214",
+    "title": "Фото автомобиля",
+    "author": "Автор User15",
+    "price": "Данная цена 12$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/3.png",
+    "number": "Слот №112",
+    "title": "Портрет тачек",
+    "author": "Автор Car221",
+    "price": "Данная цена 1122$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/4.png",
+    "number": "Слот №7",
+    "title": "Гуль Канеки",
+    "author": "Автор Канеки кен",
+    "price": "Данная цена 1007$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/5.png",
+    "number": "Слот №69",
+    "title": "Маг целитель аниме картинка",
+    "author": "Автор LoveAnime",
+    "price": "Данная цена 669$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/1.png",
+    "number": "Слот №213",
+    "title": "Постер время приключений",
+    "author": "Автор Alex228",
+    "price": "Данная цена 113$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/2.png",
+    "number": "Слот №214",
+    "title": "Фото автомобиля",
+    "author": "Автор User15",
+    "price": "Данная цена 12$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/3.png",
+    "number": "Слот №112",
+    "title": "Портрет тачек",
+    "author": "Автор Car221",
+    "price": "Данная цена 1122$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/4.png",
+    "number": "Слот №7",
+    "title": "Гуль Канеки",
+    "author": "Автор Канеки кен",
+    "price": "Данная цена 1007$"
+  },
+  {
+    "image": "../../../public/images/AuctionCard/5.png",
+    "number": "Слот №69",
+    "title": "Маг целитель аниме картинка",
+    "author": "Автор LoveAnime",
+    "price": "Данная цена 669$"
+  }
+]

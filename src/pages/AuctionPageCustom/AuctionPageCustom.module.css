@@ -1,0 +1,8 @@
+.inner {
+  display: grid;
+  margin-top: 80px;
+  gap: 58.5px;
+  grid-gap: 0;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}

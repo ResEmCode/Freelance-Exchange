@@ -1,14 +1,18 @@
 [
   {
-    "title": "Аукцион"
+    "title": "Аукцион",
+    "path": "/auction"
   },
   {
-    "title": "Биржа"
+    "title": "Биржа",
+    "path": "/birja"
   },
   {
-    "title": "LogIn"
+    "title": "LogIn",
+    "path": "/login"
   },
   {
-    "title": "SigIn"
+    "title": "SigIn",
+    "path": "/sigin"
   }
 ]
