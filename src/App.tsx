@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { Layout } from '@/components/Layouts';
-import { HomePage } from '@/pages/HomePage/HomePage';
+import { HomePage, RandomAuctionPage } from '@/pages';
 import { routes } from '@/routes';
-import { RandomAuctionPage } from './pages/RandomAuctionPage/RandomAuctionPage';
 
 export const App = () => {
   return (
