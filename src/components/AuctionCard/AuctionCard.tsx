@@ -1,8 +1,7 @@
 import { Button } from '@/shared';
 import styles from './AuctionCard.module.css';
-import { FC } from 'react';
 
-interface IAuction {
+export interface AuctionCardProps {
   number: string;
   image: string;
   title: string;
@@ -10,7 +9,7 @@ interface IAuction {
   price: string;
 }
 
-export const AuctionCard: FC<IAuction> = ({ number, image, title, author, price }) => {
+export const AuctionCard = ({ number, image, title, author, price }: AuctionCardProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
@@ -27,4 +26,3 @@ export const AuctionCard: FC<IAuction> = ({ number, image, title, author, price 
   );
 };
 
-export default AuctionCard;
