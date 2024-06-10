@@ -1,0 +1,35 @@
+.img {
+  width: 100%;
+  max-width: 356px;
+  height: 503px;
+}
+
+.inner {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  font-size: 64px;
+  padding-block: 38px 50px;
+  text-align: center;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.swiper {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.unlike {
+  position: absolute;
+  top: 35px;
+  right: 575px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

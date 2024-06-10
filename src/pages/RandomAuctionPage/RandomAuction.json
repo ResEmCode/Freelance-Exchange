@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Buggatti asd",
+    "price": "1.000.000$",
+    "image": "../../../../../public/images/RandomAuction/buggatti.png",
+    "id": "1"
+  },
+  {
+    "title": "Lamborghini Aventador",
+    "price": "605.000$",
+    "image": "../../../../../public/images/RandomAuction/lamborghini.jpg",
+    "id": "2"
+  },
+  {
+    "title": "Porshe",
+    "price": "349.000$",
+    "image": "../../../../../public/images/RandomAuction/porshe.jpg",
+    "id": "3"
+  }
+]

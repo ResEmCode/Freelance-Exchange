@@ -1,4 +1,5 @@
 export const routes = {
   HOME: '/',
-  AUCTION: '/auction'
+  AUCTION: '/auction',
+  RANDOMAUCTION: '/randomauction'
 };
