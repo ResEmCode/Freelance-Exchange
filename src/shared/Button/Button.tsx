@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from './Button.module.css';
 import { ComponentProps, ReactNode, forwardRef } from 'react';
 
-type ButtonVariant = 'conteined';
+type ButtonVariant = 'conteined' | 'offer';
 
 interface ButtonProps extends ComponentProps<'button'> {
   children: ReactNode;
