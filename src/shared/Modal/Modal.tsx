@@ -10,7 +10,7 @@ interface ModalProps {
 
 const modal = document.getElementById('modal');
 
-const Modal: FC<ModalProps> = ({ children, onClick }) => {
+export const Modal: FC<ModalProps> = ({ children, onClick }) => {
   return (
     modal &&
     createPortal(
@@ -23,5 +23,3 @@ const Modal: FC<ModalProps> = ({ children, onClick }) => {
     )
   );
 };
-
-export default Modal;

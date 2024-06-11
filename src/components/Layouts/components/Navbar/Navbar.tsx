@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import { Input } from '@/shared/Input/Input';
-import Modal from '@/shared/Modal/Modal';
-import { Button } from '@/shared';
+import { Input, Modal, Button } from '@/shared';
 import Items from './date.json';
 import { Logo } from '@/assets/svg';
 import { Typography } from '@/components/Typography/Typography';
@@ -35,7 +33,7 @@ export const Navbar = () => {
             <Input variant='primary' type='password' placeholder='Пароль' />
           </form>
           <img onClick={() => handleModal('modal1')} src={close} alt='' className={styles.img} />
-          <Button className={styles.contained} variant='conteined'>
+          <Button className={styles.btn} variant='conteined'>
             Продолжить
           </Button>
         </Modal>
