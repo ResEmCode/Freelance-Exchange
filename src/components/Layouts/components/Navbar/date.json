@@ -1,8 +1,10 @@
 [
   {
-    "title": "Аукцион"
+    "title": "Аукцион",
+    "path": "/auction"
   },
   {
-    "title": "Биржа"
+    "title": "Биржа",
+    "path": "/birja"
   }
 ]

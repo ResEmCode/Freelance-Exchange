@@ -66,11 +66,11 @@ export const Navbar = () => {
             <ul className={styles.items}>
               {Items.map((item) => (
                 <li key={item.title} className={styles.item}>
-                  <a href='#!'>
+                  <Link to={item.path}>
                     <Typography variant='paragraph16_regular' tag='p'>
                       {item.title}
                     </Typography>
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li onClick={() => handleModal('modal1')} className={styles.item}>
