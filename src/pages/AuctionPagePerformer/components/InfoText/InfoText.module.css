@@ -1,0 +1,15 @@
+
+  .title_primary {
+    color: var(--primary-color);
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
