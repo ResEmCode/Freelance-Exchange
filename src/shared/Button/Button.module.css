@@ -15,11 +15,7 @@
   color: var(--secondary-color);
   font-size: 40px;
 
-
-  &:hover{
-    background-color: var(--primary-color-hover)
+  &:hover {
+    background-color: var(--primary-color-hover);
   }
 }
-
-
-
