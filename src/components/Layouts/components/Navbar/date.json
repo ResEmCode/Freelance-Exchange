@@ -6,13 +6,5 @@
   {
     "title": "Биржа",
     "path": "/birja"
-  },
-  {
-    "title": "LogIn",
-    "path": "/login"
-  },
-  {
-    "title": "SigIn",
-    "path": "/sigin"
   }
 ]
