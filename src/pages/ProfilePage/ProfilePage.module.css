@@ -1,0 +1,55 @@
+.avatare {
+  width: 250px;
+  height: 250px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 94px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 67px;
+  gap: 20px;
+}
+
+.more {
+  padding-top: 57px;
+  padding-bottom: 120px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.reviewstext {
+  padding-top: 60px;
+  margin-bottom: 53px;
+}
