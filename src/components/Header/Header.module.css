@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+  height: 503px;
+  margin-block: 55px;
+}
+
+.img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 503px;
+  filter: blur(20px);
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
+.block {
+  display: flex;
+  padding-bottom: 111px;
+}
+
+.title {
+  display: inline-block;
+  color: #fff;
+  margin-block: 45px;
+}
+
+.input {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding-block: 28px;
+  padding-inline: 28px;
+
+  &::placeholder {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+
+.btn {
+  border-radius: none;
+}

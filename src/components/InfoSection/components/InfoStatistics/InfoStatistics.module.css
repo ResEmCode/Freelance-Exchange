@@ -1,0 +1,41 @@
+.items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 55px;
+}
+
+.item {
+  height: 100%;
+  min-height: 230px;
+  max-height: 230px;
+  align-self: center;
+  padding: 66px 55px 88px;
+  border: 3px solid var(--primary-color-3);
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 700;
+  gap: 6px;
+  line-height: 44px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+
+  & path{
+    fill: var(--primary-color)
+  }
+}
+
+.desc {
+  line-height: 19px;
+}
