@@ -1,3 +1,4 @@
+export * from './AuctionCard/AuctionCard';
 export * from './Header/Header';
 export * from './HomeDesc/HomeDesc';
 export * from './HomeSlider';

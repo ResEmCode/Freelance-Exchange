@@ -6,7 +6,8 @@ type TypographyVariant =
   | 'paragraph30_medium'
   | 'title24_regular'
   | 'title96_regular'
-  | 'title40_regular';
+  | 'title40_regular'
+  | 'title32_bold';
 
 type TypographyTag = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
 

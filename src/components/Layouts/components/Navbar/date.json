@@ -1,11 +1,14 @@
 [
   {
-    "title": "Аукцион"
-  },
-  {
-    "title": "Биржа"
+    "title": "Аукцион",
+    "path": "/auction"
   },
   {
     "title": "Профиль"
+    "path":"profile",
+  },
+  {
+    "title": "Биржа",
+    "path": "/birja"
   }
 ]

@@ -1,4 +1,7 @@
 export const routes = {
   HOME: '/',
-  PROFILE: '/profile'
+  PROFILE: '/profile',
+  AUCTION: '/auction',
+  RANDOMAUCTION: '/randomauction',
+  AUCTIONPERFORMER: '/auctionperformer'
 };
