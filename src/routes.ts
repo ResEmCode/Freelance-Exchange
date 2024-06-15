@@ -3,5 +3,6 @@ export const routes = {
   PROFILE: '/profile',
   AUCTION: '/auction',
   RANDOMAUCTION: '/randomauction',
-  AUCTIONPERFORMER: '/auctionperformer'
+  AUCTIONPERFORMER: '/auctionperformer',
+  ADDAUCTION: '/addauction'
 };
