@@ -7,4 +7,8 @@
   --secondary-color: #fff;
   --secondary-color-hover: #e0e0e0;
   --text-color: #676666;
+  --accent-color: #000;
+  --accent-color-6: rgb(0 0 0 / 60%);
+  --primary-boxshadow: 0 0 20px 1px rgb(0 0 0 / 25%);
+  --error-color: #f00;
 }

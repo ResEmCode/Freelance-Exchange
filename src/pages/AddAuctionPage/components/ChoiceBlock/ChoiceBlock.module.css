@@ -1,0 +1,15 @@
+.subtitle {
+  color: var(--text-color);
+}
+
+.text_block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 16px;
+}

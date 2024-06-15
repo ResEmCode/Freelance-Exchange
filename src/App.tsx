@@ -1,8 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from '@/components/Layouts';
-import { HomePage, RandomAuctionPage, AuctionPageCustom, AuctionPagePerformer } from '@/pages';
+
+import { HomePage, RandomAuctionPage, AuctionPageCustom, AuctionPagePerformer, AddAuctionPage } from '@/pages';
 import { routes } from '@/routes';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
+
+
 
 export const App = () => {
   return (
@@ -10,9 +13,11 @@ export const App = () => {
       <Route path={routes.HOME} element={<Layout />}>
         <Route index element={<HomePage />} />
       </Route>
+
       <Route path={routes.PROFILE} element={<Layout />}>
         <Route index element={<ProfilePage />} />
       </Route>
+
       <Route path={routes.AUCTION} element={<Layout />}>
         <Route index element={<AuctionPageCustom />} />
       </Route>
@@ -21,6 +26,10 @@ export const App = () => {
       </Route>
       <Route path={routes.AUCTIONPERFORMER} element={<Layout />}>
         <Route index element={<AuctionPagePerformer />} />
+      </Route>
+
+      <Route path={routes.ADDAUCTION} element={<Layout />}>
+        <Route index element={<AddAuctionPage />} />
       </Route>
     </Routes>
   );

@@ -1,19 +1,25 @@
 .primary {
   width: 400px;
   padding: 20px;
-  border: 1px solid #000;
+  border: 1px solid var(--accent-color);
   border-radius: 20px;
   outline: none;
 
   &:focus {
-    border: 2px solid #5ab468;
+    border: 2px solid var(--primary-color);
   }
+}
+
+.input::placeholder {
+  color: var(--text-color);
+  font-family: Inter-font, Helvetica, Arial, sans-serif;
+  font-size: inherit;
 }
 
 .second {
   width: 400px;
   padding: 20px;
-  border: 1px solid #000;
+  border: 1px solid var(--accent-color);
   border-radius: 20px;
   outline: none;
   transition:
@@ -21,6 +27,22 @@
     width 0.3s ease-in-out;
 
   &:focus {
+    border: 2px solid var(--primary-color);
     padding-block: 60px;
+  }
+}
+
+.auction {
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  background: var(--secondary-color);
+  box-shadow: var(--primary-boxshadow);
+}
+
+.error {
+  border: 1px solid var(--error-color);
+
+  &::placeholder {
+    color: var(--error-color);
   }
 }
