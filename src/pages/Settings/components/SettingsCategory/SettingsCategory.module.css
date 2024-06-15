@@ -1,0 +1,32 @@
+.title {
+  padding-top: 132px;
+}
+
+.items {
+  display: flex;
+  padding-top: 70px;
+  gap: 50px;
+}
+
+.item {
+  position: relative;
+  padding-bottom: 2px;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+    content: '';
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover:before {
+    width: 100%;
+    opacity: 1;
+  }
+}

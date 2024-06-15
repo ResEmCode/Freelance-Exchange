@@ -32,6 +32,20 @@
   }
 }
 
+
+.third {
+  width: 580px;
+  padding: 20px;
+  border: 1px #d5d3d3 solid;
+  border-radius: 20px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid rgb(217 217 217 / 50%);
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 10%);
+  }
+}
+
 .auction {
   border: 1px solid var(--text-color);
   border-radius: 4px;
@@ -44,5 +58,6 @@
 
   &::placeholder {
     color: var(--error-color);
+
   }
 }

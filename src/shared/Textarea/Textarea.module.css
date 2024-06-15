@@ -1,3 +1,20 @@
+
+.primary {
+  max-width: 610px;
+  height: 300px;
+  padding: 10px;
+  border: 1px #d5d3d3 solid;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  resize: none;
+
+  &:focus {
+    border: 2px solid rgb(217 217 217 / 50%);
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 10%);
+  }
+}
+
 .textarea::placeholder {
   color: var(--text-color);
   font-family: Inter-font, Helvetica, Arial, sans-serif;
