@@ -1,0 +1,14 @@
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 4px;
+  background: var(--secondary-color);
+  box-shadow: var(--primary-boxshadow);
+  cursor: pointer;
+}
+
+.drag_active {
+  border: 2px dashed var(--text-color);
+}

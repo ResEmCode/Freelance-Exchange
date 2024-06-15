@@ -1,0 +1,10 @@
+.inner {
+  display: grid;
+  margin-top: 80px;
+  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.btn{
+  margin-top: 80px;
+}

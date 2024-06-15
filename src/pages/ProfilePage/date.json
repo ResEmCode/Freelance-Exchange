@@ -4,7 +4,8 @@
     "phone": "+7 9950342332",
     "country": "Russia",
     "dateReg": "17.01.2023",
-    "Online": "Online"
+    "online": "Online",
+    "imageUrl": "../../../public/images/ProfilePage/reviewsImage.png"
   },
   "profile": {
     "name": "Славик",
@@ -139,39 +140,11 @@
   ],
   "reviews": [
     {
-      "Seller": {
-        "imageSeller": "../../../public/images/ProfilePage/reviewsImage.png",
-        "nameSeller": "OtsaiRaze",
-        "imageOffer": "../../../public/images/ProfilePage/project 2.png"
-      },
       "Buyer": {
+        "imageOffer": "../../../public/images/ProfilePage/project 2.png",
         "imageBuyer": "../../../public/images/ProfilePage/project 1.png",
         "nameBuyer": "meow-double",
         "descBuyer": "Заказ был выполнен в сроки и без правок, обязательно обращусь повторно!"
-      }
-    },
-    {
-      "Seller": {
-        "imageSeller": "../../../public/images/ProfilePage/reviewsImage.png",
-        "nameSeller": "Otsairaze",
-        "imageOffer": "../../../public/images/ProfilePage/project 2.png"
-      },
-      "Buyer": {
-        "imageBuyer": "../../../public/images/ProfilePage/project 1.png",
-        "nameBuyer": "amega",
-        "descBuyer": "Заказ не был выполнен в точные сроки, исполнитель долго отвечал и не проявлял интерес"
-      }
-    },
-    {
-      "Seller": {
-        "imageSeller": "../../../public/images/ProfilePage/reviewsImage.png",
-        "nameSeller": "OtsaiRaze",
-        "imageOffer": "../../../public/images/ProfilePage/project 2.png"
-      },
-      "Buyer": {
-        "imageBuyer": "../../../public/images/ProfilePage/project 1.png",
-        "nameBuyer": "monoblade",
-        "descBuyer": "Круто, все понравилось, будем сотрудничать"
       }
     }
   ]

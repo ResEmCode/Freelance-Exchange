@@ -30,7 +30,7 @@ export const ProfilePage = () => {
             <Typography variant='paragraph20_regular'>{userInfo.phone}</Typography>
             <Typography variant='paragraph20_regular'>{userInfo.country}</Typography>
             <Typography variant='paragraph20_regular'>{userInfo.dateReg}</Typography>
-            <Typography variant='paragraph20_regular'>{userInfo.Online}</Typography>
+            <Typography variant='paragraph20_regular'>{userInfo.online}</Typography>
           </div>
         </div>
         <div className={styles.desc}>
@@ -67,9 +67,9 @@ export const ProfilePage = () => {
             imageBuyer={item.Buyer.imageBuyer}
             nameBuyer={item.Buyer.nameBuyer}
             desc={item.Buyer.descBuyer}
-            imageSeller={item.Seller.imageSeller}
-            nameSeller={item.Seller.nameSeller}
-            offer={item.Seller.imageOffer}
+            imageSeller={userInfo.imageUrl}
+            nameSeller={userInfo.login}
+            offer={item.Buyer.imageOffer}
           />
         ))}
       </div>
