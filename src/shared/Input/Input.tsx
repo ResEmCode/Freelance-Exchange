@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { ComponentProps, forwardRef } from 'react';
 import styles from './Input.module.css';
 
-type InputVariant = 'primary' | 'second';
+type InputVariant = 'primary' | 'second' | 'third';
 
 interface InputProps extends ComponentProps<'input'> {
   variant: InputVariant;

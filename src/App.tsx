@@ -1,9 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-
 import { Layout } from '@/components/Layouts';
-import { HomePage } from '@/pages/HomePage/HomePage';
 import { routes } from '@/routes';
-import { ProfilePage } from './pages/ProfilePage/ProfilePage';
+import { HomePage, ProfilePage, Settings } from './pages';
 
 export const App = () => {
   return (
@@ -13,6 +11,9 @@ export const App = () => {
       </Route>
       <Route path={routes.PROFILE} element={<Layout />}>
         <Route index element={<ProfilePage />} />
+      </Route>
+      <Route path={routes.SETTINGS} element={<Layout />}>
+        <Route index element={<Settings />} />
       </Route>
     </Routes>
   );

@@ -1,0 +1,22 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 111px;
+  gap: 60px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
+
+.block {
+  display: flex;
+  gap: 43px;
+}
+
+.btn {
+  width: 300px;
+  padding: 15px 20px;
+  font-size: 22px;
+}

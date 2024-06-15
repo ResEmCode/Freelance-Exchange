@@ -1,4 +1,5 @@
 export const routes = {
   HOME: '/',
-  PROFILE: '/profile'
+  PROFILE: '/profile',
+  SETTINGS: '/settings/:category'
 };
