@@ -1,0 +1,31 @@
+.img {
+  width: 80px;
+  height: 80px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px;
+}
+
+.offer {
+  width: 160px;
+  height: 160px;
+}
+
+.seller,
+.buyer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

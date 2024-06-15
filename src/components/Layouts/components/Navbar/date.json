@@ -4,6 +4,10 @@
     "path": "/auction"
   },
   {
+    "title": "Профиль"
+    "path":"profile",
+  },
+  {
     "title": "Биржа",
     "path": "/birja"
   }

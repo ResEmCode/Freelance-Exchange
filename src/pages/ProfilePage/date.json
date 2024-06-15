@@ -1,0 +1,151 @@
+{
+  "user": {
+    "login": "OtsaiRaze",
+    "phone": "+7 9950342332",
+    "country": "Russia",
+    "dateReg": "17.01.2023",
+    "online": "Online",
+    "imageUrl": "../../../public/images/ProfilePage/reviewsImage.png"
+  },
+  "profile": {
+    "name": "Славик",
+    "profession": "Front-end Developer"
+  },
+  "rate": {
+    "count": "1",
+    "rating": "5",
+    "rank": "Советуемый биржей"
+  },
+  "project": [
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 1.png",
+      "title": "Аниме",
+      "price": "150$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 2.png",
+      "title": "Мультик свинка-пеппа",
+      "price": "1200$"
+    },
+    {
+      "image": "../../../../public/images/ProfilePage/project 3.png",
+      "title": "Мультик май литл пони",
+      "price": "1000$"
+    }
+  ],
+  "reviews": [
+    {
+      "Buyer": {
+        "imageOffer": "../../../public/images/ProfilePage/project 2.png",
+        "imageBuyer": "../../../public/images/ProfilePage/project 1.png",
+        "nameBuyer": "meow-double",
+        "descBuyer": "Заказ был выполнен в сроки и без правок, обязательно обращусь повторно!"
+      }
+    }
+  ]
+}

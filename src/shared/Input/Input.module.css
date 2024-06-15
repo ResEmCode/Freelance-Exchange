@@ -9,3 +9,18 @@
     border: 2px solid #5ab468;
   }
 }
+
+.second {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  outline: none;
+  transition:
+    padding 0.3s ease-in-out,
+    width 0.3s ease-in-out;
+
+  &:focus {
+    padding-block: 60px;
+  }
+}

@@ -1,0 +1,11 @@
+.img {
+  width: 200px;
+  height: 140px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
