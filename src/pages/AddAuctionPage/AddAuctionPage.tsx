@@ -33,7 +33,7 @@ export const AddAuctionPage = () => {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <ul className={styles.list}>
-          <ChoiceBlock text='1. Имя слота'>
+          <ChoiceBlock text='1. Имя слота' error={errors.name?.message}>
             <Input
               variant='auction'
               placeholder='Картина ...'
@@ -43,7 +43,7 @@ export const AddAuctionPage = () => {
             />
           </ChoiceBlock>
 
-          <ChoiceBlock text='2. Описание слота'>
+          <ChoiceBlock text='2. Описание слота' error={errors.desc?.message}>
             <Textarea
               variant='auction'
               placeholder='Слот связан с ...'
@@ -53,7 +53,7 @@ export const AddAuctionPage = () => {
             />
           </ChoiceBlock>
 
-          <ChoiceBlock text='3. Предварительная цена'>
+          <ChoiceBlock text='3. Предварительная цена ($)' error={errors.startPrice?.message}>
             <Input
               variant='auction'
               placeholder='Число в $...'
