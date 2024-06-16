@@ -1,10 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from '@/components/Layouts';
-import { HomePage, RandomAuctionPage, AuctionPageCustom, AuctionPagePerformer, AddAuctionPage } from '@/pages';
+import {
+  HomePage,
+  RandomAuctionPage,
+  AuctionPageCustom,
+  AuctionPagePerformer,
+  AddAuctionPage,
+  ProfilePage,
+  Settings,
+  ChatPage
+} from '@/pages';
 import { routes } from '@/routes';
-
-
-
 
 export const App = () => {
   return (
@@ -17,6 +23,7 @@ export const App = () => {
       </Route>
       <Route path={routes.SETTINGS} element={<Layout />}>
         <Route index element={<Settings />} />
+      </Route>
       <Route path={routes.AUCTION} element={<Layout />}>
         <Route index element={<AuctionPageCustom />} />
       </Route>
@@ -28,6 +35,9 @@ export const App = () => {
       </Route>
       <Route path={routes.ADDAUCTION} element={<Layout />}>
         <Route index element={<AddAuctionPage />} />
+      </Route>
+      <Route path={routes.CHATPAGE} element={<Layout />}>
+        <Route index element={<ChatPage />} />
       </Route>
     </Routes>
   );

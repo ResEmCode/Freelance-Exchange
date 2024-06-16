@@ -5,6 +5,6 @@ export const routes = {
   AUCTION: '/auction',
   RANDOMAUCTION: '/randomauction',
   AUCTIONPERFORMER: '/auctionperformer',
-  ADDAUCTION: '/addauction'
-
+  ADDAUCTION: '/addauction',
+  CHATPAGE: '/chatpage'
 };
