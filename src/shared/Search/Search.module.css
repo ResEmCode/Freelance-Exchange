@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.input {
+  border: none;
+}

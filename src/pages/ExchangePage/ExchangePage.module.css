@@ -1,0 +1,20 @@
+.title {
+  padding-block: 60px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
