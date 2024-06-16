@@ -28,6 +28,12 @@
   line-height: 29px;
 }
 
+.title20_medium {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
 .title40_regular {
   color: #000;
   font-size: 40px;

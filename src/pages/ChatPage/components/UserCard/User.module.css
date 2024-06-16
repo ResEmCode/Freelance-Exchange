@@ -1,0 +1,47 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.img {
+  width: 64px;
+  height: 64px;
+  border-radius: 200px;
+}
+
+.text {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+.active {
+
+  path {
+    fill: #c8d809;
+  }
+}
+
+.tick {
+  width: 24px;
+  height: 12px;
+}
