@@ -1,0 +1,25 @@
+{
+  "cards": [
+    {
+      "title": "Anime art",
+      "authorName": "Denis",
+      "date": "01.06.2024",
+      "price": 120,
+      "status": 0
+    },
+    {
+      "title": "Food",
+      "authorName": "Slava",
+      "date": "05.01.2023",
+      "price": 20,
+      "status": 2
+    },
+    {
+      "title": "BMW Cars",
+      "authorName": "Amega",
+      "date": "07.11.2022",
+      "price": 440,
+      "status": 1
+    }
+  ]
+}

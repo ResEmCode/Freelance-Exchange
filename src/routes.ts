@@ -6,5 +6,6 @@ export const routes = {
   RANDOMAUCTION: '/randomauction',
   AUCTIONPERFORMER: '/auctionperformer',
   ADDAUCTION: '/addauction',
-  CHATPAGE: '/chatpage'
+  CHATPAGE: '/chatpage',
+  ORDERS: '/orders'
 };

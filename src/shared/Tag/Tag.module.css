@@ -1,0 +1,21 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 100px;
+  color:var(--secondary-color);
+  cursor: pointer;
+}
+
+.error {
+  background-color: var(--error-color);
+}
+
+.success {
+  background-color: var(--success-color);
+}
+
+.pedding {
+  background-color: var(--pedding-color);
+}
