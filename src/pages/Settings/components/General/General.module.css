@@ -29,6 +29,16 @@
 
 .delete {
   margin-left: 253px;
-  color: #ff0c0c;
+  color: var(--error-color);
   cursor: pointer;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.err {
+  color: var(--error-color);
 }

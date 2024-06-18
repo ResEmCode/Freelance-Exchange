@@ -37,3 +37,7 @@
     box-shadow: 0 0 20px 1px rgb(0 0 0 / 10%);
   }
 }
+
+.error {
+  border: 1px solid #ff0c0c;
+}
