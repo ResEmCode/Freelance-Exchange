@@ -6,7 +6,8 @@ type InputVariant = 'primary' | 'second' | 'auction' | 'third' | 'search';
 
 interface InputProps extends ComponentProps<'input'> {
   variant: InputVariant;
-  error?: string;
+  error?: string | undefined;
+
 }
 export const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ type, placeholder, variant, className, error, ...props }, ref) => {

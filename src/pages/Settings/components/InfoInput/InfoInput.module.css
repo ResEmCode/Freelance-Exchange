@@ -1,3 +1,13 @@
 .title {
   margin-block: 25px;
 }
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+
+.err {
+  color: var(--error-color);
+}
