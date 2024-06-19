@@ -1,3 +1,4 @@
+
 import { Input } from '../Input/Input';
 import SearchSvg from '@/assets/images/svg/search.svg';
 import styles from './Search.module.css';

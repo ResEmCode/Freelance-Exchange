@@ -32,3 +32,15 @@
   }
 }
 
+.filter {
+  min-width: 200px;
+  padding: 10px;
+  border-color: transparent;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 20px;
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+}

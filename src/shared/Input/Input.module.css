@@ -32,7 +32,6 @@
   }
 }
 
-
 .third {
   width: 580px;
   padding: 20px;
@@ -58,6 +57,17 @@
 
   &::placeholder {
     color: var(--error-color);
+  }
+}
 
+.search {
+  width: 300px;
+  padding: 13px;
+  border: 1px #d5d3d3 solid;
+  border-radius: 4px;
+  outline: none;
+
+  &:focus {
+    border: none;
   }
 }

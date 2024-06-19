@@ -8,6 +8,7 @@ import {
   AddAuctionPage,
   ProfilePage,
   Settings,
+  ExchangePage
   ChatPage,
   OrdersPage
 } from '@/pages';
@@ -36,6 +37,9 @@ export const App = () => {
       </Route>
       <Route path={routes.ADDAUCTION} element={<Layout />}>
         <Route index element={<AddAuctionPage />} />
+      </Route>
+      <Route path={routes.EXCHANGE} element={<Layout />}>
+        <Route index element={<ExchangePage />} />
       </Route>
       <Route path={routes.CHATPAGE} element={<Layout />}>
         <Route index element={<ChatPage />} />
