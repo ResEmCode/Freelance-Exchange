@@ -1,0 +1,16 @@
+.btn {
+  position: absolute;
+  z-index: 1;
+  bottom: 350px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.next {
+  right: 450px;
+}
+
+.prev {
+  left: 450px;
+}

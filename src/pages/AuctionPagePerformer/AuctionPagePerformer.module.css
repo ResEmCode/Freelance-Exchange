@@ -1,0 +1,52 @@
+.inner {
+  display: grid;
+  margin-top: 80px;
+  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.button_add {
+  min-width: 240px;
+  border-radius: 20px;
+  font-size: 24px;
+  padding-block: 24px;
+}
+
+.btn {
+  display: flex;
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 4;
+  border-radius: 100px;
+}
+
+.img_support {
+  width: 32px;
+  height: 32px;
+}
+
+.img_info{
+  width: 48px;
+  height: 48px;
+}
+
+.modal {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+  padding: 40px;
+  color: var(--text-color);
+  gap: 27px;
+}

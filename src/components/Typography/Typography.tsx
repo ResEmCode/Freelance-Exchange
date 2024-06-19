@@ -1,12 +1,15 @@
 import clsx from 'clsx';
 
 type TypographyVariant =
+| 'paragraph16_regular'
   | 'paragraph20_regular'
-  | 'paragraph16_regular'
-  | 'paragraph30_medium'
+  | 'title20_medium'
   | 'title24_regular'
+  | 'title24_bold'
+  | 'paragraph30_medium'
+  | 'title32_bold'
+  | 'title40_regular'
   | 'title96_regular'
-  | 'title40_regular';
 
 type TypographyTag = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
 

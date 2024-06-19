@@ -16,12 +16,22 @@
   line-height: 100%;
 }
 
-
 .title24_regular {
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
 
+.title24_bold {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.title20_medium {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
 }
 
 .title40_regular {
@@ -34,5 +44,11 @@ line-height: 29px;
 .title96_regular {
   font-size: 96px;
   font-weight: 400;
+  line-height: 100%;
+}
+
+.title32_bold {
+  font-size: 32px;
+  font-weight: 600;
   line-height: 100%;
 }

@@ -1,0 +1,84 @@
+{
+  "Card": [
+    {
+      "imageUrl": "../../../public/images/Exchange/1.png",
+      "task": "Сверстать landing page",
+      "description": "Нужно сделать одностранничный сайт, плачу 50$ час, сроки до следующей недели",
+      "price": "600$",
+      "bargain": "+-100$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/2.png",
+      "task": "Нарисовать картину красками",
+      "description": "Нарисовать картину и отправить почтой",
+      "price": "300$",
+      "bargain": "-"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/3.png",
+      "task": "Создать парсер на питоне",
+      "description": "Создать парсер для парса страниц",
+      "price": "800$",
+      "bargain": "+-400$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/1.png",
+      "task": "Сверстать landing page",
+      "description": "Нужно сделать одностранничный сайт, плачу 50$ час, сроки до следующей недели",
+      "price": "600$",
+      "bargain": "+-100$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/2.png",
+      "task": "Нарисовать картину красками",
+      "description": "Нарисовать картину и отправить почтой",
+      "price": "300$",
+      "bargain": "-"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/3.png",
+      "task": "Создать парсер на питоне",
+      "description": "Создать парсер для парса страниц",
+      "price": "800$",
+      "bargain": "+-400$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/1.png",
+      "task": "Сверстать landing page",
+      "description": "Нужно сделать одностранничный сайт, плачу 50$ час, сроки до следующей недели",
+      "price": "600$",
+      "bargain": "+-100$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/2.png",
+      "task": "Нарисовать картину красками",
+      "description": "Нарисовать картину и отправить почтой",
+      "price": "300$",
+      "bargain": "-"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/3.png",
+      "task": "Создать парсер на питоне",
+      "description": "Создать парсер для парса страниц",
+      "price": "800$",
+      "bargain": "+-400$"
+    },
+    {
+      "imageUrl": "../../../public/images/Exchange/3.png",
+      "task": "Создать парсер на питоне",
+      "description": "Создать парсер для парса страниц",
+      "price": "800$",
+      "bargain": "+-400$"
+    }
+  ],
+  "Sort": [
+    "Дизайн",
+    "IT сфера",
+    "Social Media",
+    "SEO & Optimization",
+    "Training",
+    "Music",
+    "Translate",
+    "Analytics"
+  ]
+}

@@ -1,0 +1,45 @@
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 20px 1px rgb(0 0 0 / 10%);
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.wrapper {
+  position: absolute;
+}
+
+.btn {
+  min-width: 400px;
+  padding: 10px;
+  border-color: transparent;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 20px;
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+}
+
+.item {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+  }
+}
