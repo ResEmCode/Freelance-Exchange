@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "title": "User-69",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png",
+      "isFavorite": true,
+      "lastMessage": "Да, так сойдёт, спасибо за работу )"
+    },
+    {
+      "title": "Denis",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png",
+      "isFavorite": false,
+      "lastMessage": "Ну ты баран конечно..."
+    },
+    {
+      "title": "Slavik",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png",
+      "isFavorite": false,
+      "lastMessage": "Привет, я родился !!!"
+    }
+  ],
+
+  "chats": {
+    "title": "User-69",
+    "id": "1222",
+    "frendImageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png",
+    "selfImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zgksrD0mAphQtp0n2lpWLLKcEoneqATtNg&s",
+    "messages": [
+      { "text": "Привет, мой любимый ментор Денис!!!", "person": "he" },
+      { "text": "Привет, смотри что сегодня нашёл...", "person": "me" },
+      {
+        "text": "Ого, ничего себе. А ты крутой, мой ментор Денис. Когда меня обучишь какому-нибудь коду? Я этого жду уже целый год",
+        "person": "he"
+      }
+    ]
+  }
+}

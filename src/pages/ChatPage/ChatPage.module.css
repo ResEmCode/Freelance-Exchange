@@ -1,0 +1,6 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-block: 80px;
+}

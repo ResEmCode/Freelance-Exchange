@@ -1,0 +1,12 @@
+.inner {
+  max-width: 480px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.search {
+  padding: 26px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+
