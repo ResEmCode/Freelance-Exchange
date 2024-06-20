@@ -1,7 +1,6 @@
-import styles from './HomeDesc.module.css';
-import { OfferBlock } from './components';
+import { OfferBlock, InfoBlock } from './components';
 
-import { InfoBlock } from './components/InfoBlock/InfoBlock';
+import styles from './HomeDesc.module.css';
 import SmileImage from '@/assets/images/HomeDesc/icon.png';
 
 import date from './date.json';

@@ -1,6 +1,8 @@
-import { createPortal } from 'react-dom';
-import styles from './Modal.module.css';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import { createPortal } from 'react-dom';
+
+import styles from './Modal.module.css';
 import clsx from 'clsx';
 
 interface ModalProps extends ComponentProps<'div'> {
@@ -12,7 +14,6 @@ const modal = document.getElementById('modal');
 
 export const Modal = forwardRef<HTMLDivElement, ModalProps>(
   ({ children, onClick, className }, ref) => {
-
     return (
       modal &&
       createPortal(

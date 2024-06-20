@@ -1,3 +1,6 @@
+import { Typography } from '../Typography/Typography';
+
+import styles from './WhyUsSection.module.css';
 import clsx from 'clsx';
 
 import Arrow1 from '@/assets/images/WhyUsSection/arrow-1.png';
@@ -5,10 +8,6 @@ import Arrow2 from '@/assets/images/WhyUsSection/arrow-2.png';
 import Circle1 from '@/assets/images/WhyUsSection/circle-1.png';
 import Circle2 from '@/assets/images/WhyUsSection/circle-2.png';
 import Circle3 from '@/assets/images/WhyUsSection/circle-3.png';
-
-import { Typography } from '../Typography/Typography';
-
-import styles from './WhyUsSection.module.css';
 
 export const WhyUsSection = () => {
   return (

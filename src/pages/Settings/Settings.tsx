@@ -1,12 +1,11 @@
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+import { General, Profile, Finance, SettingsCategory } from './components';
+
 import styles from './Settings.module.css';
 
 import info from '../ProfilePage/date.json';
-import SettingsCategory from './components/SettingsCategory/SettingsCategory';
-import { General } from './components/General/General';
-import { Profile } from './components/Profile/Profile';
-import { Finance } from './components/Finance/Finance';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 export const Settings = () => {
   const { category } = useParams();

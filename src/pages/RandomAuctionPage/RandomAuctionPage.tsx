@@ -1,10 +1,12 @@
-import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
-import { SwiperNavButton } from '../RandomAuctionPage/components/SwiperNavButton';
-import RandomAuction from './RandomAuction.json';
+import 'swiper/swiper-bundle.css';
+
+import { AuctionRandomCard, SwiperNavButton } from './components';
+
 import styles from './RandomAuctionPage.module.css';
-import { AuctionRandomCard } from './components/AuctionRandomCard/AuctionRandomCard';
+
+import RandomAuction from './RandomAuction.json';
 
 export const RandomAuctionPage = () => {
   return (

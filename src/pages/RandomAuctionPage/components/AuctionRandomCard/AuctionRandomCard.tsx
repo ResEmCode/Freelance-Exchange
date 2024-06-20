@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
-import like from '../../../../../public/images/RandomAuction/like.svg';
-import unlike from '../../../../../public/images/RandomAuction/unlike.svg';
+import React from 'react';
+
 import styles from './AuctionRandomCard.module.css';
-import 'swiper/swiper-bundle.css';
+
+import unlike from '../../../../../public/images/RandomAuction/unlike.svg';
+import like from '../../../../../public/images/RandomAuction/like.svg';
 
 interface AuctionRandomCardProps {
   image: string;
@@ -10,7 +11,7 @@ interface AuctionRandomCardProps {
   price: string;
 }
 
-export const AuctionRandomCard: FC<AuctionRandomCardProps> = ({ image, title, price }) => {
+export const AuctionRandomCard = ({ image, title, price }: AuctionRandomCardProps) => {
   const [active, setActive] = React.useState(false);
   return (
     <>

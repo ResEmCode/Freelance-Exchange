@@ -1,5 +1,6 @@
-import { Typography } from '@/components/Typography/Typography';
 import { ComponentProps, ReactNode } from 'react';
+
+import { Typography } from '@/components';
 
 import styles from './InfoBlock.module.css';
 import clsx from 'clsx';

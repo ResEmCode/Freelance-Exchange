@@ -1,6 +1,7 @@
+import { ComponentProps, ReactNode, forwardRef } from 'react';
+
 import clsx from 'clsx';
 import styles from './Button.module.css';
-import { ComponentProps, ReactNode, forwardRef } from 'react';
 
 type ButtonVariant = 'conteined' | 'offer' | 'filter';
 

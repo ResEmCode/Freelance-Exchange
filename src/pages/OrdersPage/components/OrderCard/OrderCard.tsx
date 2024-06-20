@@ -1,6 +1,7 @@
 import { Typography } from '@/components';
-import styles from './OrderCard.module.css';
 import { Button, Tag } from '@/shared';
+
+import styles from './OrderCard.module.css';
 
 interface OrderCardProps {
   title: string;

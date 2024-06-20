@@ -59,3 +59,7 @@ button {
   color: inherit;
   cursor: pointer;
 }
+
+input {
+  box-sizing: border-box;
+}

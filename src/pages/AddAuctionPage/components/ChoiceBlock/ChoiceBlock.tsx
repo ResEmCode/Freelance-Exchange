@@ -1,6 +1,8 @@
-import { Typography } from '@/components';
-import styles from './ChoiceBlock.module.css';
 import { ComponentProps, ReactNode } from 'react';
+
+import { Typography } from '@/components';
+
+import styles from './ChoiceBlock.module.css';
 
 type ChoiceBlockTag = 'div' | 'li';
 

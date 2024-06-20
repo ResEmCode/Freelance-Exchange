@@ -1,18 +1,22 @@
-import { Link } from 'react-router-dom';
-import styles from './Navbar.module.css';
-import { Input, Modal, Button } from '@/shared';
-import Items from './date.json';
-import { Logo } from '@/assets/svg';
-import { Typography } from '@/components/Typography/Typography';
-import close from '../../../../../public/images/Modal/close.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-type ModalType = 'modal1' | 'modal2';
+import { Input, Modal, Button } from '@/shared';
+import { Typography } from '@/components';
+
+import styles from './Navbar.module.css';
+
+import close from '../../../../../public/images/Modal/close.png';
+import { Logo } from '@/assets/svg';
+
+import Items from './date.json';
+
+type ModalType = 'modalLogin' | 'modalSignUp';
 
 export const Navbar = () => {
   const [open, setOpen] = useState({
-    modal1: false,
-    modal2: false
+    modalLogin: false,
+    modalSignUp: false
   });
 
   const handleModal = (modal: ModalType) => {
@@ -24,28 +28,55 @@ export const Navbar = () => {
 
   return (
     <div className={styles.wrapper}>
-      {open.modal1 && (
-        <Modal onClick={() => handleModal('modal1')}>
-          <h3 className={styles.title}>Регистрация</h3>
+      {open.modalLogin && (
+        <Modal onClick={() => handleModal('modalLogin')} className={styles.modal}>
+          <div className={styles.top}>
+            <h3 className={styles.title}>Регистрация</h3>
+            <img
+              onClick={() => handleModal('modalLogin')}
+              src={close}
+              alt=''
+              className={styles.img}
+            />
+          </div>
           <form className={styles.form} action=''>
-            <Input variant='primary' type='email' placeholder='Почта' />
-            <Input variant='primary' type='text' placeholder='Логин' />
-            <Input variant='primary' type='password' placeholder='Пароль' />
+            <Input className={styles.input} variant='primary' type='email' placeholder='Почта' />
+            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' />
+            <Input
+              className={styles.input}
+              variant='primary'
+              type='password'
+              placeholder='Пароль'
+            />
           </form>
-          <img onClick={() => handleModal('modal1')} src={close} alt='' className={styles.img} />
+
           <Button className={styles.btn} variant='conteined'>
             Продолжить
           </Button>
         </Modal>
       )}
-      {open.modal2 && (
-        <Modal onClick={() => handleModal('modal2')}>
-          <h3 className={styles.title}>Авторизация</h3>
+      {open.modalSignUp && (
+        <Modal onClick={() => handleModal('modalSignUp')} className={styles.modal}>
+          <div className={styles.top}>
+            <h3 className={styles.title}>Авторизация</h3>
+            <img
+              onClick={() => handleModal('modalSignUp')}
+              src={close}
+              alt=''
+              className={styles.img}
+            />
+          </div>
+
           <form className={styles.form} action=''>
-            <Input variant='primary' type='text' placeholder='Логин' />
-            <Input variant='primary' type='password' placeholder='Пароль' />
+            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' />
+            <Input
+              className={styles.input}
+              variant='primary'
+              type='password'
+              placeholder='Пароль'
+            />
           </form>
-          <img onClick={() => handleModal('modal2')} src={close} alt='' className={styles.img} />
+
           <Button className={styles.btn} variant='conteined'>
             Продолжить
           </Button>
@@ -73,10 +104,10 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li onClick={() => handleModal('modal1')} className={styles.item}>
+              <li onClick={() => handleModal('modalLogin')} className={styles.item}>
                 SignIn
               </li>
-              <li onClick={() => handleModal('modal2')} className={styles.item}>
+              <li onClick={() => handleModal('modalSignUp')} className={styles.item}>
                 LogIn
               </li>
             </ul>

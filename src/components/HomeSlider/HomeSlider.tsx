@@ -1,8 +1,10 @@
-import styles from './HomeSlider.module.css';
-import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { SwiperNavButton } from './components/SwiperNavButton';
+
+import styles from './HomeSlider.module.css';
+import 'swiper/swiper-bundle.css';
+
 import SwiperItems from './date.json';
 
 export const HomeSlider = () => {
@@ -16,7 +18,7 @@ export const HomeSlider = () => {
           modules={[Pagination, Navigation]}
           navigation={{
             nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
+            prevEl: '.swiper-prev'
           }}
         >
           {SwiperItems.map((item, index) => (

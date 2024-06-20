@@ -1,9 +1,11 @@
+import { useSwiper } from 'swiper/react';
+
 import clsx from 'clsx';
-import next from '../../../../public/images/HomeSlider/next.png';
-import prev from '../../../../public/images/HomeSlider/prev.png';
 import styles from './SwiperNavButton.module.css';
 
-import { useSwiper } from 'swiper/react';
+import next from '../../../../public/images/HomeSlider/next.png';
+import prev from '../../../../public/images/HomeSlider/prev.png';
+
 
 export const SwiperNavButton = () => {
   const swiper = useSwiper();

@@ -1,12 +1,12 @@
 import { Input } from '@/shared';
+
 import styles from './ExchangeSort.module.css';
-import { FC } from 'react';
 
 interface ExchangeSortProps {
   title: string;
 }
 
-export const ExchangeSort: FC<ExchangeSortProps> = ({ title }) => {
+export const ExchangeSort = ({ title }: ExchangeSortProps) => {
   return (
     <form className={styles.form}>
       <label className={styles.label}>

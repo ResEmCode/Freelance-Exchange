@@ -8,7 +8,7 @@ import {
   AddAuctionPage,
   ProfilePage,
   Settings,
-  ExchangePage
+  ExchangePage,
   ChatPage,
   OrdersPage
 } from '@/pages';

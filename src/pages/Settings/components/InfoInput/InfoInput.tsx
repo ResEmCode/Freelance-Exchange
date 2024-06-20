@@ -1,7 +1,6 @@
 import { Typography } from '@/components';
 
 import styles from './InfoInput.module.css';
-import { FC } from 'react';
 
 interface InfoInputProps {
   title: string;
@@ -9,7 +8,7 @@ interface InfoInputProps {
   children: any;
 }
 
-const InfoInput: FC<InfoInputProps> = ({ title, children, text }) => {
+export const InfoInput = ({ title, children, text }: InfoInputProps) => {
   return (
     <div>
       <div className={styles.block}>
@@ -23,4 +22,4 @@ const InfoInput: FC<InfoInputProps> = ({ title, children, text }) => {
   );
 };
 
-export default InfoInput;
+

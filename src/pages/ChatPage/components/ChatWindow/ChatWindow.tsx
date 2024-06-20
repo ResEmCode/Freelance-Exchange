@@ -1,8 +1,11 @@
 import { Typography } from '@/components';
-import styles from './ChatWindow.module.css';
-import data from '../../data.json';
-import clsx from 'clsx';
+
 import { SendMenu } from '../SendMenu/SendMenu';
+
+import styles from './ChatWindow.module.css';
+import clsx from 'clsx';
+
+import data from '../../data.json';
 
 export const ChatWindow = () => {
   const chats = data.chats;

@@ -1,9 +1,12 @@
-import { Typography } from '@/components';
-import styles from './User.module.css';
-import TickSvg from '@/assets/images/svg/tick.svg';
 import { useState } from 'react';
-import { Star } from '@/assets/svg/Icons/Star';
+
+import { Typography } from '@/components';
+
+import styles from './User.module.css';
 import clsx from 'clsx';
+
+import TickSvg from '@/assets/images/svg/tick.svg';
+import { Star } from '@/assets/svg/Icons/Star';
 
 interface UserCardProps {
   imageUrl: string;

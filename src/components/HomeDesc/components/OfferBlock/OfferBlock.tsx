@@ -1,8 +1,8 @@
-import { Typography } from '@/components/Typography/Typography';
-import styles from './OfferBlock.module.css';
+import { Typography } from '@/components';
 import { Button } from '@/shared';
-import BgImage from '@/assets/images/HomeDesc/bg.jpg';
 
+import styles from './OfferBlock.module.css';
+import BgImage from '@/assets/images/HomeDesc/bg.jpg';
 export const OfferBlock = () => {
   return (
     <div className={styles.wrapper}>

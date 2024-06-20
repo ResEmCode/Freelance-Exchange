@@ -1,10 +1,13 @@
-import styles from './General.module.css';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { SettingsSchema, settingsSchema } from '@/pages/Settings/constans/SettingsSchema';
+
 import { Typography } from '@/components';
 import { Button, Input } from '@/shared';
-import InfoInput from '../InfoInput/InfoInput';
-import { useForm } from 'react-hook-form';
-import { SettingsSchema, settingsSchema } from '../constans/SettingsSchema';
-import { zodResolver } from '@hookform/resolvers/zod';
+
+import {InfoInput} from '../InfoInput/InfoInput';
+
+import styles from './General.module.css';
 
 export const General = () => {
   const {

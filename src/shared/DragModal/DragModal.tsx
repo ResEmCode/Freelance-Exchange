@@ -1,7 +1,9 @@
 import { ComponentProps, useState } from 'react';
+
+import { dragDropHandle, dragHandle } from './utils';
+
 import styles from './DragModal.module.css';
 import clsx from 'clsx';
-import { dragDropHandle, dragHandle } from './utils';
 
 interface DragModalProps extends ComponentProps<'div'> {}
 export const DragModal = ({ className }: DragModalProps) => {

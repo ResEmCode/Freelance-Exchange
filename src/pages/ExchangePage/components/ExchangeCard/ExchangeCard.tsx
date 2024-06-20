@@ -1,4 +1,5 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
+
 import styles from './ExchangeCard.module.css';
 import clsx from 'clsx';
 
@@ -10,7 +11,13 @@ interface ExchangeCardProps {
   bargain: string;
 }
 
-const ExchangeCard: FC<ExchangeCardProps> = ({ imageUrl, task, description, price, bargain }) => {
+export const ExchangeCard = ({
+  imageUrl,
+  task,
+  description,
+  price,
+  bargain
+}: ExchangeCardProps) => {
   const [active, setActive] = useState(false);
 
   return (
@@ -38,5 +45,3 @@ const ExchangeCard: FC<ExchangeCardProps> = ({ imageUrl, task, description, pric
     </div>
   );
 };
-
-export default ExchangeCard;

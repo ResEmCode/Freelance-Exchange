@@ -1,8 +1,9 @@
-import clsx from 'clsx';
 import { ComponentProps, forwardRef } from 'react';
-import styles from './Textarea.module.css';
 
-type TextareaVariant = 'auction' | 'primary';
+import styles from './Textarea.module.css';
+import clsx from 'clsx';
+
+type TextareaVariant = 'primary' | 'auction';
 
 interface TextareaProps extends ComponentProps<'textarea'> {
   variant: TextareaVariant;

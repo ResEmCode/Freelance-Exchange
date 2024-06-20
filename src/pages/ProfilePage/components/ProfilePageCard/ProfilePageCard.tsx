@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import styles from './ProfilePageCard.module.css';
 
 interface ProfilePageCardProps {
@@ -7,7 +6,7 @@ interface ProfilePageCardProps {
   price: string;
 }
 
-export const ProfilePageCard: FC<ProfilePageCardProps> = ({ image, title, price }) => {
+export const ProfilePageCard = ({ image, title, price }: ProfilePageCardProps) => {
   return (
     <div className={styles.wrapper}>
       <img src={image} alt='project' className={styles.img} />

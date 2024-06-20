@@ -1,13 +1,16 @@
 import { useState } from 'react';
+
 import { AuctionCard } from '@/components';
 import { Button, Modal } from '@/shared';
 
+import { InfoText } from './components/InfoText/InfoText';
+
 import styles from './AuctionPagePerformer.module.css';
-import date from '../../components/AuctionCard/date.json';
 
 import SupportSvg from '@/assets/images/svg/support.svg';
 import InfoSvg from '@/assets/images/svg/Info.svg';
-import { InfoText } from './components/InfoText/InfoText';
+
+import date from '../../components/AuctionCard/date.json';
 
 export const AuctionPagePerformer = () => {
   const [activeModal, setActiveModal] = useState(false);

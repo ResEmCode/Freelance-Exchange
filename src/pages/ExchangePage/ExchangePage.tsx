@@ -1,10 +1,10 @@
 import { Typography } from '@/components';
-import date from './date.json';
-import styles from './ExchangePage.module.css';
-import ExchangeCard from './components/ExchangeCard/ExchangeCard';
-import { ExchangeSort } from './components/ExchangeSort/ExchangeSort';
 import { Search } from '@/shared/Search/Search';
-import { ExchangeFilter } from './components/ExchangeFilter/ExchangeFilter';
+
+import { ExchangeSort, ExchangeCard, ExchangeFilter } from './components';
+
+import styles from './ExchangePage.module.css';
+import date from './date.json';
 
 export const ExchangePage = () => {
   return (
@@ -19,7 +19,7 @@ export const ExchangePage = () => {
               <ExchangeSort key={index} title={item} />
             ))}
           </div>
-          <Search placeholder='Поиск...' />
+          <Search />
           <ExchangeFilter />
         </div>
         <div className={styles.block}>

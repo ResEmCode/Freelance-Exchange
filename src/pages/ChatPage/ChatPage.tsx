@@ -1,5 +1,5 @@
-import { ChatWindow } from './components/ChatWindow/ChatWindow';
-import { SideBar } from './components/SideBar/SideBar';
+import { ChatWindow, SideBar } from './components';
+
 import styles from './ChatPage.module.css';
 
 export const ChatPage = () => {

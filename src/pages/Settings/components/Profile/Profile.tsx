@@ -1,9 +1,11 @@
-import styles from './Profile.module.css';
-import InfoInput from '../InfoInput/InfoInput';
-import { Button, Input } from '@/shared';
-import date from './date.json';
 import { Typography } from '@/components';
-import { Textarea } from '@/shared/Textarea/Textarea';
+import { Button, Input, Textarea } from '@/shared';
+
+import { InfoInput } from '../InfoInput/InfoInput';
+
+import styles from './Profile.module.css';
+
+import date from './date.json';
 
 export const Profile = () => {
   return (

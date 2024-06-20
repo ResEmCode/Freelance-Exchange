@@ -1,11 +1,15 @@
-import styles from './ProfilePage.module.css';
-import avatare from '../../../public/images/ProfilePage/avatare.jpg';
-import { ProfilePageCard } from './components/ProfilePageCard/ProfilePageCard';
-import Info from './date.json';
+import { useState } from 'react';
+
 import { Typography } from '@/components';
 import { Button, Input } from '@/shared';
-import { useState } from 'react';
-import { ProfilePageReviewsCard } from './components/ProfilePageReviewsCard/ProfilePageReviewsCard';
+
+import { ProfilePageCard, ProfilePageReviewsCard } from './components';
+
+import styles from './ProfilePage.module.css';
+
+import avatare from '../../../public/images/ProfilePage/avatare.jpg';
+
+import Info from './date.json';
 
 export const ProfilePage = () => {
   const userInfo = Info.user;

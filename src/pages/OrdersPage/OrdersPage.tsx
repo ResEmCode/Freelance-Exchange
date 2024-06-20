@@ -1,7 +1,10 @@
 import { Typography } from '@/components';
+
+import { OrderCard } from './components';
+
 import styles from './OrdersPage.module.css';
+
 import data from './data.json';
-import { OrderCard } from './components/OrderCard/OrderCard';
 
 export const OrdersPage = () => {
   const cards = data.cards;

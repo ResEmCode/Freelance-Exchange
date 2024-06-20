@@ -1,12 +1,17 @@
-import { Typography } from '@/components';
-import { zodResolver } from '@hookform/resolvers/zod';
-import styles from './AddAuctionPage.module.css';
-import { Button, Input, Textarea } from '@/shared';
 import { SubmitHandler, useForm } from 'react-hook-form';
+
+import { zodResolver } from '@hookform/resolvers/zod';
 import { auctionSchema, type AuctionSchema } from './constans/AuctionScheme';
-import { ChoiceBlock } from './components/ChoiceBlock/ChoiceBlock';
-import { DragModal } from '@/shared/DragModal/DragModal';
+
+import { Typography } from '@/components';
+import { Button, Input, Textarea, DragModal } from '@/shared';
+
+import { ChoiceBlock } from './components';
+
+import styles from './AddAuctionPage.module.css';
+
 import { auctionTimeArray, bitTimeArray } from './data.json';
+
 
 export const AddAuctionPage = () => {
   const {
@@ -18,8 +23,6 @@ export const AddAuctionPage = () => {
     resolver: zodResolver(auctionSchema),
     mode: 'onBlur'
   });
-
-  console.log(errors);
   const onSubmit: SubmitHandler<AuctionSchema> = (data) => {
     alert('Спасибо за заявку:' + data);
     reset();
@@ -33,6 +36,18 @@ export const AddAuctionPage = () => {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <ul className={styles.list}>
+          {/* {InfoBlocks.map((block) => (
+            <ChoiceBlock key={block.value} text={block.title} error={errors[block.value]?.message}>
+              <Input
+                variant='auction'
+                placeholder={block.placeholder}
+                className={styles.input}
+                {...register(block.value)}
+                error={errors[block.value]?.message}
+              />
+            </ChoiceBlock>
+          ))} */}
+          
           <ChoiceBlock text='1. Имя слота' error={errors.name?.message}>
             <Input
               variant='auction'

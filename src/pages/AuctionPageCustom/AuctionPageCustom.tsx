@@ -1,8 +1,11 @@
-import styles from './AuctionPageCustom.module.css';
-import date from '../../components/AuctionCard/date.json';
-import { Button } from '@/shared';
-import { Typography, AuctionCard } from '@/components';
 import { useNavigate } from 'react-router-dom';
+
+import { Typography, AuctionCard } from '@/components';
+import { Button } from '@/shared';
+
+import styles from './AuctionPageCustom.module.css';
+
+import date from '../../components/AuctionCard/date.json';
 
 export const AuctionPageCustom = () => {
   const navigate = useNavigate();

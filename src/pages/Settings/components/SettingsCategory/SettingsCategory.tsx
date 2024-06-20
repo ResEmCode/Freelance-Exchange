@@ -1,13 +1,14 @@
 import { Typography } from '@/components';
-import date from './date.json';
+
 import styles from './SettingsCategory.module.css';
-import { FC } from 'react';
+
+import date from './date.json';
 
 interface SettingsCategoryProps {
   setIndexPage: (index: number) => void;
 }
 
-const SettingsCategory: FC<SettingsCategoryProps> = ({ setIndexPage }) => {
+export const SettingsCategory = ({ setIndexPage }: SettingsCategoryProps) => {
   return (
     <>
       <Typography className={styles.title} variant='title24_regular'>
@@ -27,5 +28,3 @@ const SettingsCategory: FC<SettingsCategoryProps> = ({ setIndexPage }) => {
     </>
   );
 };
-
-export default SettingsCategory;

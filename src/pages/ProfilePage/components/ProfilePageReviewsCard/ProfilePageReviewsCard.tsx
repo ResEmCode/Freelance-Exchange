@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import styles from './ProfilePageReviewsCard.module.css';
 
 interface ProfilePageReviewsCardProps {
@@ -10,14 +9,14 @@ interface ProfilePageReviewsCardProps {
   offer: string;
 }
 
-export const ProfilePageReviewsCard: FC<ProfilePageReviewsCardProps> = ({
+export const ProfilePageReviewsCard = ({
   imageSeller,
   imageBuyer,
   nameSeller,
   nameBuyer,
   desc,
   offer
-}) => {
+}: ProfilePageReviewsCardProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.block}>

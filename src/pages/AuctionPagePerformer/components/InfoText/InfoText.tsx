@@ -1,5 +1,6 @@
-import { Typography } from "@/components";
-import styles from "./InfoText.module.css";
+import { Typography } from '@/components';
+
+import styles from './InfoText.module.css';
 
 export const InfoText = () => {
   return (

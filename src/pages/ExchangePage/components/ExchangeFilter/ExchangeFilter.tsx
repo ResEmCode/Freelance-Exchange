@@ -1,8 +1,11 @@
-import { Button } from '@/shared';
-import styles from './ExchangeFilter.module.css';
-import date from './date.json';
 import { useState } from 'react';
+
+import { Button } from '@/shared';
+
+import styles from './ExchangeFilter.module.css';
 import clsx from 'clsx';
+
+import date from './date.json';
 
 export const ExchangeFilter = () => {
   const [active, setActive] = useState(false);

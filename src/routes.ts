@@ -3,10 +3,10 @@ export const routes = {
   PROFILE: '/profile',
   SETTINGS: '/settings/:category',
   AUCTION: '/auction',
-  RANDOMAUCTION: '/randomauction',
-  AUCTIONPERFORMER: '/auctionperformer',
-  ADDAUCTION: '/addauction',
-  EXCHANGE: '/exchange'
+  RANDOMAUCTION: '/random-auction',
+  AUCTIONPERFORMER: '/auction-performer',
+  ADDAUCTION: '/add-auction',
+  EXCHANGE: '/exchange',
   CHATPAGE: '/chatpage',
   ORDERS: '/orders'
 };

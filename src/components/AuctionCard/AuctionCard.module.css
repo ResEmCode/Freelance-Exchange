@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  background-color: #5ab468;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   gap: 20px;
   transition: transform 0.2s;
 

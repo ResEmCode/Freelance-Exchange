@@ -1,7 +1,11 @@
-.img {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  gap: 20px;
 }
 
 .input {
@@ -11,12 +15,8 @@
   outline: none;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 20px;
-  border: 1px solid var(--text-color);
-  border-radius: 4px;
-  gap: 20px;
+.img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import { Button } from '@/shared';
+
 import styles from './AuctionCard.module.css';
 
 export interface AuctionCardProps {
@@ -14,7 +15,7 @@ export const AuctionCard = ({ number, image, title, author, price }: AuctionCard
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <p className={styles.number}>{number}</p>
-        <img className={styles.img} src={image} alt='' />
+        <img className={styles.img} src={image} alt='auction' />
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.inner}>
           <span className={styles.author}>{author}</span>

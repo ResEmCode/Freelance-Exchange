@@ -1,6 +1,6 @@
-import date from '../../date.json';
-
 import styles from './InfoCards.module.css';
+
+import date from '../../date.json';
 
 const { CardItems } = date;
 

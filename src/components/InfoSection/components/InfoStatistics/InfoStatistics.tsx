@@ -1,10 +1,9 @@
-// import Logo from '@/assets/images/logo.svg';
 import { Typography } from '@/components';
-
-import data from '../../date.json';
 
 import styles from './InfoStatistics.module.css';
 import { Logo } from '@/assets/svg';
+
+import data from '../../date.json';
 
 const statistics = data.Statistics;
 
@@ -15,7 +14,7 @@ export const InfoStatistics = () => {
         return (
           <li key={item.title} className={styles.item}>
             <h2 className={styles.title}>
-              {item.logo && <Logo size={25} className={styles.icon}/>}
+              {item.logo && <Logo size={25} className={styles.icon} />}
               {item.title}
             </h2>
             <Typography className={styles.desc} variant='paragraph16_regular' tag='p'>

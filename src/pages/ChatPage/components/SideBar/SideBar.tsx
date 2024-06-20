@@ -1,7 +1,9 @@
 import { Search } from '@/shared';
+
+import { UserCard } from '../UserCard/UserCard';
+
 import styles from './SideBar.module.css';
 import data from '../../data.json';
-import { UserCard } from '../UserCard/UserCard';
 
 export const SideBar = () => {
   const users = data.users;

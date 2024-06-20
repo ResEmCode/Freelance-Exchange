@@ -37,7 +37,7 @@
 .active {
 
   path {
-    fill: #c8d809;
+    fill: var(--action-color);
   }
 }
 
