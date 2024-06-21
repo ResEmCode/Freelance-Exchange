@@ -10,6 +10,8 @@
   max-width: 900px;
   align-items: center;
   justify-content: space-between;
+  padding: 30px;
+  box-shadow: var(--second-boxshadow);
   gap: 50px;
 }
 
@@ -43,17 +45,12 @@
   gap: 10px;
 }
 
-.acc {
-
-  span {
-    cursor: pointer;
-  }
+.btn {
+  cursor: pointer;
 }
 
 .info {
   display: flex;
-  width: 100%;
-  max-width: 100px;
-  padding: 10px;
-  gap: 20px;
+  flex-direction: column;
+  gap: 8px;
 }

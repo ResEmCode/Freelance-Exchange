@@ -5,6 +5,7 @@ import { Logo } from '@/assets/svg';
 
 import date from './date.json';
 
+
 export const Footer = () => {
   return (
     <div className={styles.container}>

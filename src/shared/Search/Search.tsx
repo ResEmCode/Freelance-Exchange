@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef } from 'react';
 
-import { Input } from '../Input/Input';
+import { Input } from '../Inputs/Input/Input';
 
 import styles from './Search.module.css';
 import clsx from 'clsx';

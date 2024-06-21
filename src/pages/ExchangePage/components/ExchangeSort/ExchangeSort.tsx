@@ -1,18 +1,15 @@
-import { Input } from '@/shared';
+import { Checkbox } from '@/shared';
 
 import styles from './ExchangeSort.module.css';
 
-interface ExchangeSortProps {
-  title: string;
-}
+import date from '../../date.json';
 
-export const ExchangeSort = ({ title }: ExchangeSortProps) => {
+export const ExchangeSort = () => {
   return (
     <form className={styles.form}>
-      <label className={styles.label}>
-        <Input className={styles.input} variant='auction' type='checkbox' />
-        {title}
-      </label>
+      {date.Sort.map((item) => (
+        <Checkbox key={item}>{item}</Checkbox>
+      ))}
     </form>
   );
 };

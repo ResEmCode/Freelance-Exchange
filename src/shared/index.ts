@@ -1,6 +1,6 @@
 export * from './Button/Button';
 export * from './DragModal/DragModal';
-export * from './Input/Input';
+export * from './Inputs';
 export * from './Modal/Modal';
 export * from './Search/Search';
 export * from './Tag/Tag';

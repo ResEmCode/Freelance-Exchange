@@ -33,9 +33,9 @@ export const ExchangeCard = ({
               Описание: {description}
             </p>
           </div>
-          <div className={styles.acc}>
-            <span onClick={() => setActive(!active)}>Показать полностью</span>
-          </div>
+          <span className={styles.btn} onClick={() => setActive((prev) => !prev)}>
+            Показать полностью
+          </span>
         </div>
       </div>
       <div className={styles.info}>

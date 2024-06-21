@@ -4,14 +4,13 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { auctionSchema, type AuctionSchema } from './constans/AuctionScheme';
 
 import { Typography } from '@/components';
-import { Button, Input, Textarea, DragModal } from '@/shared';
+import { Button, Input, Textarea, DragModal, Radio } from '@/shared';
 
 import { ChoiceBlock } from './components';
 
 import styles from './AddAuctionPage.module.css';
 
 import { auctionTimeArray, bitTimeArray } from './data.json';
-
 
 export const AddAuctionPage = () => {
   const {
@@ -47,7 +46,7 @@ export const AddAuctionPage = () => {
               />
             </ChoiceBlock>
           ))} */}
-          
+
           <ChoiceBlock text='1. Имя слота' error={errors.name?.message}>
             <Input
               variant='auction'
@@ -81,9 +80,9 @@ export const AddAuctionPage = () => {
           <ChoiceBlock text='4. Время ставки'>
             <div className={styles.radio_block}>
               {bitTimeArray.map((item) => (
-                <label key={item} className={styles.label}>
-                  <input type='radio' value={item} checked {...register('bidTime')} /> {item}
-                </label>
+                <Radio key={item} value={item} checked {...register('bidTime')}>
+                  {item}
+                </Radio>
               ))}
             </div>
           </ChoiceBlock>
@@ -91,9 +90,9 @@ export const AddAuctionPage = () => {
           <ChoiceBlock text='5. Время аукциона'>
             <div className={styles.radio_block}>
               {auctionTimeArray.map((item) => (
-                <label key={item} className={styles.label}>
-                  <input type='radio' value={item} checked {...register('auctionTime')} /> {item}
-                </label>
+                <Radio key={item} value={item} checked {...register('auctionTime')}>
+                  {item}
+                </Radio>
               ))}
             </div>
           </ChoiceBlock>

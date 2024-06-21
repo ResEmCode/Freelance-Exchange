@@ -1,11 +1,5 @@
-.label {
+.form {
   display: flex;
-  gap: 10px;
-}
-
-.input {
-  border: 1px solid var(--text-color);
-  border-radius: 4px;
-  background: var(--secondary-color);
-  box-shadow: var(--second-boxshadow);
+  flex-direction: column;
+  gap: 20px;
 }

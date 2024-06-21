@@ -1,7 +1,7 @@
 import { Typography } from '@/components';
 import { Search } from '@/shared/Search/Search';
 
-import { ExchangeSort, ExchangeCard, ExchangeFilter } from './components';
+import { ExchangeCard, ExchangeFilter, ExchangeSort } from './components';
 
 import styles from './ExchangePage.module.css';
 import date from './date.json';
@@ -9,16 +9,12 @@ import date from './date.json';
 export const ExchangePage = () => {
   return (
     <div className='container'>
-      <Typography className={styles.title} variant='title24_regular' tag='h3'>
-        Биржа проектов
-      </Typography>
       <div className={styles.inner}>
         <div className={styles.sort}>
-          <div>
-            {date.Sort.map((item, index) => (
-              <ExchangeSort key={index} title={item} />
-            ))}
-          </div>
+          <Typography variant='title24_regular' tag='h3'>
+            Биржа проектов
+          </Typography>
+          <ExchangeSort />
           <Search />
           <ExchangeFilter />
         </div>
