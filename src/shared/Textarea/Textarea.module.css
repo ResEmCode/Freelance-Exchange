@@ -4,16 +4,7 @@
   font-size: inherit;
 }
 
-.error {
-  border: 1px solid var(--error-color);
-
-  &::placeholder {
-    color: var(--error-color);
-  }
-}
-
 .primary {
-  max-width: 610px;
   height: 300px;
   padding: 10px;
   border: 1px solid var(--text-color);
@@ -35,4 +26,12 @@
   background: var(--secondary-color);
   box-shadow: var(--primary-boxshadow);
   font-size: 16px;
+}
+
+.error {
+  border: 1px solid var(--error-color);
+
+  &::placeholder {
+    color: var(--error-color);
+  }
 }

@@ -11,7 +11,7 @@ export const AuctionPageCustom = () => {
   const navigate = useNavigate();
 
   const toPath = () => {
-    navigate('/randomauction');
+    navigate('/random-auction');
   };
 
   return (

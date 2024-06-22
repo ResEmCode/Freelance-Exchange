@@ -10,6 +10,7 @@ import styles from './ProfilePage.module.css';
 import avatare from '../../../public/images/ProfilePage/avatare.jpg';
 
 import Info from './date.json';
+import { useNavigate } from 'react-router-dom';
 
 export const ProfilePage = () => {
   const userInfo = Info.user;
@@ -19,6 +20,8 @@ export const ProfilePage = () => {
   const userReviews = Info.reviews;
 
   const [visibleCards, setVisibleCards] = useState(12);
+
+  const navigation = useNavigate();
 
   const showMoreCards = () => {
     setVisibleCards((prevVisibleCards) => prevVisibleCards + 20);
@@ -43,7 +46,7 @@ export const ProfilePage = () => {
           <Input placeholder='Описание' variant='second'></Input>
         </div>
         <div className={styles.rate}>
-          <Button className={styles.btn} variant='conteined'>
+          <Button className={styles.btn} variant='conteined' onClick={() => navigation("/settings")}>
             Настройка
           </Button>
           <Typography variant='paragraph20_regular'>Проектов создано: {userRate.count}</Typography>

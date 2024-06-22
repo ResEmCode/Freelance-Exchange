@@ -10,6 +10,10 @@ import close from '../../../../../public/images/Modal/close.png';
 import { Logo } from '@/assets/svg';
 
 import Items from './date.json';
+import { useForm } from 'react-hook-form';
+
+import { zodResolver } from '@hookform/resolvers/zod';
+import { loginSchema, LoginSchema } from '../../constans/LoginSchema';
 
 type ModalType = 'modalLogin' | 'modalSignUp';
 
@@ -17,6 +21,12 @@ export const Navbar = () => {
   const [open, setOpen] = useState({
     modalLogin: false,
     modalSignUp: false
+  });
+
+  const {
+    register,
+  } = useForm<LoginSchema>({
+    resolver: zodResolver(loginSchema)
   });
 
   const handleModal = (modal: ModalType) => {
@@ -40,13 +50,13 @@ export const Navbar = () => {
             />
           </div>
           <form className={styles.form} action=''>
-            <Input className={styles.input} variant='primary' type='email' placeholder='Почта' />
-            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' />
+            <Input className={styles.input} variant='primary' type='email' placeholder='Почта' {...register("email")}/>
+            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' {...register("login")}/>
             <Input
               className={styles.input}
               variant='primary'
               type='password'
-              placeholder='Пароль'
+              placeholder='Пароль'{...register("password")}
             />
           </form>
 
@@ -67,7 +77,7 @@ export const Navbar = () => {
             />
           </div>
 
-          <form className={styles.form} action=''>
+          <form className={styles.form}>
             <Input className={styles.input} variant='primary' type='text' placeholder='Логин' />
             <Input
               className={styles.input}
@@ -98,6 +108,7 @@ export const Navbar = () => {
               {Items.map((item) => (
                 <li key={item.title} className={styles.item}>
                   <Link to={item.path}>
+                    {' '}
                     <Typography variant='paragraph16_regular' tag='p'>
                       {item.title}
                     </Typography>

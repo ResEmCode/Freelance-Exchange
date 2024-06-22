@@ -1,1 +1,14 @@
-["Общие", "Профиль", "Финансы"]
+[
+  {
+    "title": "Общие",
+    "path": "/settings/general"
+  },
+  {
+    "title": "Профиль",
+    "path": "/settings/profile"
+  },
+  {
+    "title": "Финансы",
+    "path": "/settings/finance"
+  }
+]

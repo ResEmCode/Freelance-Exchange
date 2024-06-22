@@ -1,7 +1,7 @@
 export const routes = {
   HOME: '/',
   PROFILE: '/profile',
-  SETTINGS: '/settings/:category',
+  SETTINGS: '/settings',
   AUCTION: '/auction',
   RANDOMAUCTION: '/random-auction',
   AUCTIONPERFORMER: '/auction-performer',

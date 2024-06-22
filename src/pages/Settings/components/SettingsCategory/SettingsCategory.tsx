@@ -1,30 +1,38 @@
+import { useNavigate } from 'react-router-dom';
+
 import { Typography } from '@/components';
 
 import styles from './SettingsCategory.module.css';
+import clsx from 'clsx';
 
 import date from './date.json';
 
 interface SettingsCategoryProps {
-  setIndexPage: (index: number) => void;
+  // setIndexPage: (index: number) => void;
+  indexPage: number;
 }
 
-export const SettingsCategory = ({ setIndexPage }: SettingsCategoryProps) => {
+export const SettingsCategory = ({ indexPage }: SettingsCategoryProps) => {
+  const navigate = useNavigate();
+
   return (
-    <>
+    <div className={styles.inner}>
       <Typography className={styles.title} variant='title24_regular'>
         Настройки
       </Typography>
       <ul className={styles.items}>
         {date.map((item, index) => (
-          <li onClick={() => setIndexPage(index)} key={item} className={styles.item}>
-            <a href='#!'>
-              <Typography variant='paragraph16_regular' tag='p'>
-                {item}
-              </Typography>
-            </a>
+          <li
+            onClick={() => navigate(item.path)}
+            key={item.title}
+            className={clsx(styles.item, index === indexPage && styles.active)}
+          >
+            <Typography variant='paragraph16_regular' tag='p'>
+              {item.title}
+            </Typography>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };

@@ -5,7 +5,7 @@
 .block {
   display: flex;
   align-items: center;
-  gap: 250px;
+  gap: 20px;
 }
 
 .err {

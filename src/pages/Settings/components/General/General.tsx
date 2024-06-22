@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { SettingsSchema, settingsSchema } from '@/pages/Settings/constans/SettingsSchema';
+import { GeneralSchema, generalSchema } from '@/pages/Settings/constans/GeneralSchema';
 
 import { Typography } from '@/components';
 import { Button, Input } from '@/shared';
 
-import {InfoInput} from '../InfoInput/InfoInput';
+import { InfoInput } from '../InfoInput/InfoInput';
 
 import styles from './General.module.css';
 
@@ -13,55 +13,66 @@ export const General = () => {
   const {
     register,
     formState: { errors }
-  } = useForm<SettingsSchema>({
-    resolver: zodResolver(settingsSchema),
+  } = useForm<GeneralSchema>({
+    resolver: zodResolver(generalSchema),
     mode: 'onChange'
   });
 
   return (
     <form className={styles.form}>
-      <InfoInput text={errors.login?.message} title='Логин'>
-        <Input variant='third' {...register('login')} error={errors.login?.message} />
+      <InfoInput error={errors.login?.message} title='Логин'>
+        <Input
+          className={styles.input}
+          variant='third'
+          {...register('login')}
+          error={errors.login?.message}
+          placeholder='введите логин'
+        />
       </InfoInput>
-      <InfoInput text={errors.phone?.message} title='Телефон'>
-        <Input variant='third' {...register('phone')} error={errors.phone?.message} />
+      <InfoInput error={errors.phone?.message} title='Телефон'>
+        <Input
+          className={styles.input}
+          variant='third'
+          {...register('phone')}
+          error={errors.phone?.message}
+          placeholder='введите телефон'
+        />
       </InfoInput>
-      <InfoInput text={errors.email?.message} title='Email'>
-        <Input variant='third' {...register('email')} error={errors.email?.message} />
+      <InfoInput error={errors.email?.message} title='Email'>
+        <Input
+          className={styles.input}
+          variant='third'
+          {...register('email')}
+          error={errors.email?.message}
+          placeholder='введите email'
+        />
       </InfoInput>
-      <InfoInput text={errors.time?.message} title='Часовой пояс'>
-        <Input variant='third' {...register('time')} error={errors.time?.message} />
+      <InfoInput error={errors.time?.message} title='Часовой пояс'>
+        <Input
+          className={styles.input}
+          variant='third'
+          {...register('time')}
+          error={errors.time?.message}
+          placeholder='введите часовой пояс'
+        />
       </InfoInput>
-      <div className={styles.block}>
-        <div>
-          <div className={styles.wrap}>
-            <Typography className={styles.title} variant='paragraph20_regular'>
-              Пароль
-            </Typography>
-            <span className={styles.err}>{errors.password?.message}</span>
-          </div>
-          <Input
-            className={styles.input}
-            error={errors.password?.message}
-            {...register('password')}
-            variant='third'
-          />
-        </div>
-        <div>
-          <div className={styles.wrap}>
-            <Typography className={styles.title} variant='paragraph20_regular'>
-              Пароль
-            </Typography>
-            <span className={styles.err}>{errors.passwordMust?.message}</span>
-          </div>
-          <Input
-            className={styles.input}
-            error={errors.passwordMust?.message}
-            {...register('passwordMust')}
-            variant='third'
-          />
-        </div>
-      </div>
+      <InfoInput className={styles.block} error={errors.password?.message || errors.passwordMust?.message} title='Пароль'>
+        <Input
+          className={styles.input}
+          variant='third'
+          {...register('password')}
+          error={errors.time?.message}
+          placeholder='введите пароль'
+        />
+        <Input
+          className={styles.input}
+          error={errors.passwordMust?.message}
+          {...register('passwordMust')}
+          variant='third'
+          placeholder='повторите пароль'
+        />
+      </InfoInput>
+
       <div className={styles.inner}>
         <Button className={styles.btn} variant='conteined'>
           Сохранить

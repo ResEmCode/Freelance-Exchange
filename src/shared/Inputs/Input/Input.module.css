@@ -4,14 +4,6 @@
   font-size: inherit;
 }
 
-.error {
-  border: 1px solid var(--error-color);
-
-  &::placeholder {
-    color: var(--error-color);
-  }
-}
-
 .primary {
   padding: 20px;
   border: 1px solid var(--accent-color);
@@ -47,7 +39,6 @@
 }
 
 .third {
-  width: 580px;
   padding: 20px;
   border: 1px solid var(--text-color);
   border-radius: 20px;
@@ -68,5 +59,14 @@
 
   &:focus {
     border: none;
+  }
+}
+
+
+.error {
+  border: 1px solid var(--error-color);
+
+  &::placeholder {
+    color: var(--error-color);
   }
 }

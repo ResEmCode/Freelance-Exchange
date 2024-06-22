@@ -1,10 +1,13 @@
+.inner{
+  margin-top: 60px;
+}
+
 .title {
-  padding-top: 132px;
+margin-bottom: 40px;
 }
 
 .items {
   display: flex;
-  padding-top: 70px;
   gap: 50px;
 }
 
@@ -12,21 +15,19 @@
   position: relative;
   padding-bottom: 2px;
   cursor: pointer;
+}
 
-  &:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: var(--primary-color);
-    content: '';
-    opacity: 0;
-    transition: all 0.3s ease-in;
-  }
+.active {
+  position: relative;
+  padding-bottom: 2px;
+}
 
-  &:hover:before {
-    width: 100%;
-    opacity: 1;
-  }
+.active:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  content: '';
 }

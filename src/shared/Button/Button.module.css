@@ -44,3 +44,13 @@
     background-color: var(--primary-color-hover);
   }
 }
+
+.outline {
+  border: none;
+  background-color: transparent;
+  transition: color .2s ease;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}

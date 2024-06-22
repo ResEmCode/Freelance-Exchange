@@ -25,6 +25,7 @@ export const App = () => {
       </Route>
       <Route path={routes.SETTINGS} element={<Layout />}>
         <Route index element={<Settings />} />
+        <Route index path=':category' element={<Settings />} />
       </Route>
       <Route path={routes.AUCTION} element={<Layout />}>
         <Route index element={<AuctionPageCustom />} />

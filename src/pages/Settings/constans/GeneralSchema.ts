@@ -1,6 +1,6 @@
 import * as z from 'zod';
 
-export const settingsSchema = z
+export const generalSchema = z
   .object({
     login: z
       .string()
@@ -25,4 +25,4 @@ export const settingsSchema = z
     message: 'Пароли не совпадают'
   });
 
-export type SettingsSchema = z.infer<typeof settingsSchema>;
+export type GeneralSchema = z.infer<typeof generalSchema>;
