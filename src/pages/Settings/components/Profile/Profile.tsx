@@ -9,17 +9,29 @@ import date from './date.json';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ProfileSchema, profileSchema } from '../../constans';
+import { useNavigate } from 'react-router-dom';
 
 export const Profile = () => {
-  const { register, formState: {errors} } = useForm<ProfileSchema>({
+  const navigate = useNavigate();
+
+  const {
+    register,
+    formState: { errors }
+  } = useForm<ProfileSchema>({
     resolver: zodResolver(profileSchema),
-    mode:"onBlur"
+    mode: 'onBlur'
   });
 
   return (
     <form className={styles.form}>
       <InfoInput title='Имя' error={errors.name?.message}>
-        <Input variant='third' error={errors.name?.message} placeholder='введите имя' className={styles.input} {...register('name')} />
+        <Input
+          variant='third'
+          error={errors.name?.message}
+          placeholder='введите имя'
+          className={styles.input}
+          {...register('name')}
+        />
       </InfoInput>
       <InfoInput title='Фото'>
         <img className={styles.img} src={date[0].imageUrl} alt='' />
@@ -30,7 +42,13 @@ export const Profile = () => {
         </div>
       </InfoInput>
       <InfoInput title='Вы по специальности' error={errors.work?.message}>
-        <Input variant='third' error={errors.work?.message} placeholder='введите специальность' className={styles.input} {...register('work')} />
+        <Input
+          variant='third'
+          error={errors.work?.message}
+          placeholder='введите специальность'
+          className={styles.input}
+          {...register('work')}
+        />
       </InfoInput>
       <Textarea
         className={styles.textarea}
@@ -41,13 +59,23 @@ export const Profile = () => {
         {...register('about')}
       />
       <InfoInput title='Страна' error={errors.country?.message}>
-        <Input variant='third' error={errors.country?.message} placeholder='введите страну' className={styles.input} {...register('country')} />
+        <Input
+          variant='third'
+          error={errors.country?.message}
+          placeholder='введите страну'
+          className={styles.input}
+          {...register('country')}
+        />
       </InfoInput>
       <div className={styles.inner}>
         <Button className={styles.btn} variant='conteined'>
           Сохранить
         </Button>
-        <Typography className={styles.delete} variant='paragraph20_regular'>
+        <Typography
+          className={styles.check_profile}
+          variant='paragraph20_regular'
+          onClick={() => navigate('/profile')}
+        >
           Посмотреть профиль
         </Typography>
       </div>

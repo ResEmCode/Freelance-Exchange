@@ -15,6 +15,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { loginSchema, LoginSchema } from '../../constans/LoginSchema';
 
+
 type ModalType = 'modalLogin' | 'modalSignUp';
 
 export const Navbar = () => {
@@ -23,10 +24,9 @@ export const Navbar = () => {
     modalSignUp: false
   });
 
-  const {
-    register,
-  } = useForm<LoginSchema>({
-    resolver: zodResolver(loginSchema)
+  const { register, formState: {errors} } = useForm<LoginSchema>({
+    resolver: zodResolver(loginSchema),
+    mode:"onBlur"
   });
 
   const handleModal = (modal: ModalType) => {
@@ -50,13 +50,29 @@ export const Navbar = () => {
             />
           </div>
           <form className={styles.form} action=''>
-            <Input className={styles.input} variant='primary' type='email' placeholder='Почта' {...register("email")}/>
-            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' {...register("login")}/>
             <Input
+            error={errors.email?.message}
+              className={styles.input}
+              variant='primary'
+              type='email'
+              placeholder='Почта'
+              {...register('email')}
+            />
+            <Input
+            error={errors.login?.message}
+              className={styles.input}
+              variant='primary'
+              type='text'
+              placeholder='Логин'
+              {...register('login')}
+            />
+            <Input
+            error={errors.password?.message}
               className={styles.input}
               variant='primary'
               type='password'
-              placeholder='Пароль'{...register("password")}
+              placeholder='Пароль'
+              {...register('password')}
             />
           </form>
 
@@ -78,12 +94,19 @@ export const Navbar = () => {
           </div>
 
           <form className={styles.form}>
-            <Input className={styles.input} variant='primary' type='text' placeholder='Логин' />
+            <Input
+              className={styles.input}
+              variant='primary'
+              type='text'
+              placeholder='Логин'
+              {...register('login')}
+            />
             <Input
               className={styles.input}
               variant='primary'
               type='password'
               placeholder='Пароль'
+              {...register('password')}
             />
           </form>
 

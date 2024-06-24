@@ -17,8 +17,12 @@
 
 .inner {
   display: flex;
+  width: 100%;
+  max-width: 600px;
   align-items: center;
-  padding-top: 80px;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
 }
 
 .btn {
@@ -27,9 +31,23 @@
 }
 
 .delete {
-  margin-left: 253px;
+  position: relative;
   color: var(--error-color);
   cursor: pointer;
+
+  &:before {
+    content: '';
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--error-color);
+  }
 }
 
 .err {

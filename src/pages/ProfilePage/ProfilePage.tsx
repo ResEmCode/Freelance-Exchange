@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Typography } from '@/components';
 import { Button, Input } from '@/shared';
@@ -27,6 +27,10 @@ export const ProfilePage = () => {
     setVisibleCards((prevVisibleCards) => prevVisibleCards + 20);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='container'>
       <div className={styles.inner}>
@@ -46,7 +50,11 @@ export const ProfilePage = () => {
           <Input placeholder='Описание' variant='second'></Input>
         </div>
         <div className={styles.rate}>
-          <Button className={styles.btn} variant='conteined' onClick={() => navigation("/settings")}>
+          <Button
+            className={styles.btn}
+            variant='conteined'
+            onClick={() => navigation('/settings')}
+          >
             Настройка
           </Button>
           <Typography variant='paragraph20_regular'>Проектов создано: {userRate.count}</Typography>
@@ -54,7 +62,7 @@ export const ProfilePage = () => {
           <Typography variant='paragraph20_regular'>Ранг: {userRate.rank}</Typography>
         </div>
       </div>
-      <Typography variant='title24_regular'>Портфолио</Typography>
+      <Typography className={styles.title} variant='title24_regular'>Портфолио</Typography>
       <div className={styles.block}>
         {userProject.slice(0, visibleCards).map((item, index) => (
           <ProfilePageCard key={index} {...item} />
@@ -65,7 +73,7 @@ export const ProfilePage = () => {
           Показать больше
         </Typography>
       )}
-      <Typography className={styles.reviewstext} variant='title24_regular'>
+      <Typography className={styles.reviews_text} variant='title24_regular'>
         Отзывы об исполнителе: {userProfile.name}
       </Typography>
       <div className={styles.reviews}>

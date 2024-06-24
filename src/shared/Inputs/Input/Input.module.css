@@ -56,10 +56,6 @@
   border: 1px solid var(--text-color);
   border-radius: 4px;
   outline: none;
-
-  &:focus {
-    border: none;
-  }
 }
 
 
