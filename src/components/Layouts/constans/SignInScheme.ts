@@ -1,6 +1,13 @@
 import * as z from 'zod';
 
-export const loginSchema = z.object({
+import { checkIfEmailIsValid } from '../utils/checkIfEmailIsValid';
+
+export const signInSchema = z.object({
+  email: z
+    .string()
+    .min(6, { message: 'Минимальная длина 6 символов' })
+    .max(24, { message: 'Максимальная длина 24 символа' })
+    .refine((email) => checkIfEmailIsValid(email), 'Некорректная почта'),
   login: z
     .string()
     .min(3, { message: 'Минимальная длина 3 символов' })
@@ -11,4 +18,4 @@ export const loginSchema = z.object({
     .max(20, { message: 'Пароль должен содержать максимум 20 символов' })
 });
 
-export type LoginSchema = z.infer<typeof loginSchema>;
+export type SignInSchema = z.infer<typeof signInSchema>;

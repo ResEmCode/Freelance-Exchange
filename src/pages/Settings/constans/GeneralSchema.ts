@@ -1,5 +1,7 @@
 import * as z from 'zod';
 
+import { checkIfEmailIsValid } from '@/components/Layouts/utils/checkIfEmailIsValid';
+
 export const generalSchema = z
   .object({
     login: z
@@ -10,7 +12,10 @@ export const generalSchema = z
       .string()
       .min(11, { message: 'Минимальная длина 11 символов' })
       .max(11, { message: 'Максимальная длина 11 символов' }),
-    email: z.string({ message: 'Нужно ввести почту' }).min(1, { message: 'Почта не найдена' }),
+    email: z
+      .string({ message: 'Нужно ввести почту' })
+      .min(1, { message: 'Почта не найдена' })
+      .refine((email) => checkIfEmailIsValid(email), { message: 'Некорректная почта' }),
     time: z.string().min(5, { message: 'Недопустимое значение' }),
 
     password: z

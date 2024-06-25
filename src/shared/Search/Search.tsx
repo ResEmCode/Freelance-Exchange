@@ -1,4 +1,4 @@
-import { ComponentProps, forwardRef } from 'react';
+import { ComponentProps, useRef } from 'react';
 
 import { Input } from '../Inputs/Input/Input';
 
@@ -9,17 +9,24 @@ import SearchSvg from '@/assets/images/svg/search.svg';
 
 type SearchProps = ComponentProps<'div'>;
 
-export const Search = forwardRef<HTMLInputElement, SearchProps>(({ className, ...props }, ref) => {
+export const Search = ({ className, ...props }: SearchProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
   return (
     <div className={clsx(styles.search, className)}>
       <Input
         className={styles.input}
         {...props}
-        ref={ref}
+        ref={inputRef}
         variant='auction'
         placeholder='Поиск...'
       />
-      <img className={styles.img} src={SearchSvg} alt='search' />
+      <img
+        onClick={() => inputRef.current?.focus()}
+        className={styles.img}
+        src={SearchSvg}
+        alt='search'
+      />
     </div>
   );
-});
+};

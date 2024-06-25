@@ -19,7 +19,7 @@ export const ExchangeFilter = () => {
 
       <ul className={clsx(styles.list, active && styles.active)}>
         {date.map((item, index) => (
-          <li onClick={() => setItemId(index)} className={styles.item}>
+          <li key={index} onClick={() => setItemId(index)} className={styles.item}>
             {item}
           </li>
         ))}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Typography } from '@/components';
-import { Button, Input } from '@/shared';
+import { Button, Textarea } from '@/shared';
 
 import { ProfilePageCard, ProfilePageReviewsCard } from './components';
 
@@ -47,7 +47,7 @@ export const ProfilePage = () => {
         <div className={styles.desc}>
           <Typography variant='paragraph20_regular'>Имя: {userProfile.name}</Typography>
           <Typography variant='paragraph20_regular'>Профессия: {userProfile.profession}</Typography>
-          <Input placeholder='Описание' variant='second'></Input>
+          <Textarea placeholder='Описание' variant='primary' className={styles.textarea} />
         </div>
         <div className={styles.rate}>
           <Button
@@ -62,7 +62,9 @@ export const ProfilePage = () => {
           <Typography variant='paragraph20_regular'>Ранг: {userRate.rank}</Typography>
         </div>
       </div>
-      <Typography className={styles.title} variant='title24_regular'>Портфолио</Typography>
+      <Typography className={styles.title} variant='title24_regular'>
+        Портфолио
+      </Typography>
       <div className={styles.block}>
         {userProject.slice(0, visibleCards).map((item, index) => (
           <ProfilePageCard key={index} {...item} />
@@ -79,6 +81,7 @@ export const ProfilePage = () => {
       <div className={styles.reviews}>
         {userReviews.map((item) => (
           <ProfilePageReviewsCard
+            key={item.Buyer.nameBuyer}
             imageBuyer={item.Buyer.imageBuyer}
             nameBuyer={item.Buyer.nameBuyer}
             desc={item.Buyer.descBuyer}
