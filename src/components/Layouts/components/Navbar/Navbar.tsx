@@ -59,10 +59,28 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li onClick={() => handleModal('modalSignUp')} className={styles.item}>
+              <li
+                onClick={() => handleModal('modalSignUp')}
+                className={styles.item}
+                role='button'
+                tabIndex={0}
+                onKeyPress={(event) => {
+                  if (event.key === 'Enter')
+                    setOpen((prev) => ({ ...prev, modalSignUp: !open.modalSignUp }));
+                }}
+              >
                 SignIn
               </li>
-              <li onClick={() => handleModal('modalLogin')} className={styles.item}>
+              <li
+                onClick={() => handleModal('modalLogin')}
+                className={styles.item}
+                role='button'
+                tabIndex={0}
+                onKeyPress={(event) => {
+                  if (event.key === 'Enter')
+                    setOpen((prev) => ({ ...prev, modalLogin: !open.modalLogin }));
+                }}
+              >
                 LogIn
               </li>
             </ul>

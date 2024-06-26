@@ -4,6 +4,7 @@ import CloseImg from '../../../../../public/images/Modal/close.png';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginSchema, loginSchema } from '../../constans/LoginSchema';
+import { useEffect } from 'react';
 
 type modalType = 'modalSignUp' | 'modalLogin';
 
@@ -14,11 +15,16 @@ interface LoginModalProps {
 export const LoginModal = ({ handleModal }: LoginModalProps) => {
   const {
     register,
+    setFocus,
     formState: { errors }
   } = useForm<LoginSchema>({
     resolver: zodResolver(loginSchema),
     mode: 'onBlur'
   });
+
+  useEffect(() => {
+    setFocus('login');
+  }, []);
 
   return (
     <Modal onClick={() => handleModal('modalLogin')} className={styles.modal}>
@@ -29,6 +35,11 @@ export const LoginModal = ({ handleModal }: LoginModalProps) => {
           src={CloseImg}
           alt='close'
           className={styles.img}
+          tabIndex={1}
+          role='button'
+          onKeyPress={(event) => {
+            if (event.key === 'Enter') handleModal('modalLogin');
+          }}
         />
       </div>
       <form className={styles.form}>
@@ -56,3 +67,4 @@ export const LoginModal = ({ handleModal }: LoginModalProps) => {
     </Modal>
   );
 };
+

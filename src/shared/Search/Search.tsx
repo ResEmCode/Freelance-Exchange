@@ -13,8 +13,16 @@ export const Search = ({ className, ...props }: SearchProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <div className={clsx(styles.search, className)}>
+    <div
+      className={clsx(styles.search, className)}
+      role='input'
+      tabIndex={0}
+      onKeyPress={(event) => {
+        if (event.key === 'Enter') inputRef.current?.focus();
+      }}
+    >
       <Input
+        tabIndex={0}
         className={styles.input}
         {...props}
         ref={inputRef}

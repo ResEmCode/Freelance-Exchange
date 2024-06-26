@@ -33,9 +33,19 @@ export const ExchangeCard = ({
               Описание: {description}
             </p>
           </div>
-          <span className={styles.btn} onClick={() => setActive((prev) => !prev)}>
-            Показать полностью
-          </span>
+          <div>
+            <span
+              className={styles.btn}
+              onClick={() => setActive((prev) => !prev)}
+              role='button'
+              tabIndex={0}
+              onKeyPress={(event) => {
+                if (event.key === 'Enter') setActive((prev) => !prev);
+              }}
+            >
+              Показать полностью
+            </span>
+          </div>
         </div>
       </div>
       <div className={styles.info}>
