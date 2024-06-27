@@ -75,6 +75,11 @@ export const Profile = () => {
           className={styles.check_profile}
           variant='paragraph20_regular'
           onClick={() => navigate('/profile')}
+          role='button'
+          tabIndex={0}
+          onKeyPress={(event) => {
+            if (event.key === 'Enter') navigate('/profile');
+          }}
         >
           Посмотреть профиль
         </Typography>

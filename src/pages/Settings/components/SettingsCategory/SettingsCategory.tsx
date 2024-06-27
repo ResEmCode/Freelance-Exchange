@@ -26,6 +26,11 @@ export const SettingsCategory = ({ indexPage }: SettingsCategoryProps) => {
             onClick={() => navigate(item.path)}
             key={item.title}
             className={clsx(styles.item, index === indexPage && styles.active)}
+            role='button'
+            tabIndex={0}
+            onKeyPress={(event) => {
+              if (event.key === 'Enter') navigate(item.path);
+            }}
           >
             <Typography variant='paragraph16_regular' tag='p'>
               {item.title}

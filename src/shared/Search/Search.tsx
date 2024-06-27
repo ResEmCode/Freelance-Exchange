@@ -1,7 +1,5 @@
 import { ComponentProps, useRef } from 'react';
 
-import { Input } from '../Inputs/Input/Input';
-
 import styles from './Search.module.css';
 import clsx from 'clsx';
 
@@ -15,18 +13,14 @@ export const Search = ({ className, ...props }: SearchProps) => {
   return (
     <div
       className={clsx(styles.search, className)}
-      role='input'
-      tabIndex={0}
-      onKeyPress={(event) => {
-        if (event.key === 'Enter') inputRef.current?.focus();
-      }}
     >
-      <Input
+      <input
+        role='input'
+        type='text'
         tabIndex={0}
         className={styles.input}
         {...props}
         ref={inputRef}
-        variant='auction'
         placeholder='Поиск...'
       />
       <img
